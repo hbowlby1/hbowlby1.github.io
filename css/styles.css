@@ -4,7 +4,7 @@ html{
     max-width: 50%;
     margin: auto;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color:hsla(200, 0%, 0%, .7);
 }
 
 /* Header */
@@ -41,7 +41,7 @@ li{
 
 a:hover{
     background-color: #247ba0;
-    color: white;
+    color: hsla(200, 0%, 0%, .7);
 }
 
 /* footer */
@@ -50,7 +50,7 @@ footer{
 }
 
 footer a{
-    color: white;
+    color: hsla(200, 0%, 0%, .7);
 }
 
 .lastModifiedDate {
