@@ -1,69 +1,58 @@
-html, body{
-    max-height: 650px;
-}
+/* Entire Document */
 
-/* ================================ nav bar ===========================*/
-
-nav{
-    background: rgba(78, 229, 235, 0.329);
-    height: 50px;
-    border: 2px solid black;
-}
-
-nav a{
-    text-align: center;
-    padding-top: 12px;
-}
-
-nav a:first-child{
-    border-right: 2px solid black;
-}
-
-nav a:last-child{
-    border-left: 2px solid black;
-}
-
-nav a:hover{
-    background-color: #089195;
-    text-decoration: none;
-    transform: translateY(-3px);
+html{
+    max-width: 50%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
     color: white;
-    transition: .5s;
-    cursor: pointer;
 }
 
-/* ================================ header ===========================*/
-header h1{
+/* Header */
+.hfBackground {
+    background: #247ba0;
     text-align: center;
-    padding-top: 50px;
+    border-radius: 3px;
+    padding: 10px;
 }
 
-/* ================================ body ===========================*/
-
-.firstSection{
-    padding-left: 15%;
-    float: left;
-}
-div section{
-    padding-top: 50px;
+/* Main */
+.container{
+    display: block;
 }
 
-.projectPoints li{
-    list-style-type: none;
-    border: 1px solid black;
-    width: fit-content;
-    width: -webkit-fit-content;
-    padding: 5px;
+
+.myPicture {
+    margin-right: 10px;
+    margin-top: -100px;
+    border-radius: 50px;
+    float: right;
+    box-shadow: 10px 10px 5px grey;
 }
-.projectPoints li:hover{
-    background-color: #089195;
-    text-decoration: none;
-    transform: translateY(-3px);
-    color: white;
-    transition: .5s;
-    cursor:pointer;
+
+
+.headingWithUnderline {
+    border-bottom: 1px solid black;
+    margin-right: 10px;
 }
-.projectPoints a{
-    text-decoration: none;
+
+li{
     color: black;
+}
+
+a:hover{
+    background-color: #247ba0;
+    color: white;
+}
+
+/* footer */
+footer{
+    padding-top: 50px;
+}
+
+footer a{
+    color: white;
+}
+
+.lastModifiedDate {
+    color: #FFE066;
 }
