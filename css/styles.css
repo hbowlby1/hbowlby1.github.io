@@ -1,5 +1,75 @@
 /* Entire Document */
+/* Entire Document */
 
+
+@media only screen and (max-width: 1200px){
+    html{
+        max-width: 75%;
+        margin: auto;
+        font-family: 'Raleway', sans-serif;
+        color:white;
+        font-size: 16px;
+    }
+    
+    /* Header */
+    .hfBackground {
+        background: #247ba0;
+        text-align: center;
+        border-radius: 3px;
+        padding: 10px;
+    }
+    
+    /* Main */
+    .container{
+        display: block;
+    }
+    
+    
+    .myPicture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        border-radius: 50px;
+        box-shadow: 10px 10px 5px grey;
+    }
+    
+    
+    .headingWithUnderline {
+        border-bottom: 1px solid black;
+        margin-right: 10px;
+        color: black;
+    }
+    
+    li{
+        color: black;
+    }
+    
+    a:hover{
+        background-color: #247ba0;
+        color: white;
+    }
+    
+    /* footer */
+    footer{
+        padding-top: 50px;
+    }
+    
+    footer a{
+        color:white;
+    }
+    
+    footer a:hover{
+        background-color: white;
+        color: #247ba0;
+    }
+    
+    .lastModifiedDate {
+        color: #FFE066;
+    }
+    }
+
+@media only screen and (min-width: 1200px){
 html{
     max-width: 50%;
     margin: auto;
@@ -34,6 +104,7 @@ html{
 .headingWithUnderline {
     border-bottom: 1px solid black;
     margin-right: 10px;
+    color: black
 }
 
 li{
@@ -61,4 +132,5 @@ footer a:hover{
 
 .lastModifiedDate {
     color: #FFE066;
+}
 }
