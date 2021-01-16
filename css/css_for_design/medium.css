@@ -1,0 +1,107 @@
+@media screen and (max-width: 62em){
+/* header */
+header {
+    background-color: #247ba0;
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: 1em;
+}
+
+header h1,
+h2 {
+    text-align: center;
+    padding: .2em;
+    margin: .2em 0;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h2:hover {
+    color: black;
+}
+
+/* for the main */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0;
+}
+
+/* the sections */
+
+.firstSection,.secondSection,.thirdSection {
+    border: .4em solid #247ba0;
+    border-radius: .2em;
+    text-align: center;
+    margin: 15%;
+}
+
+
+.thirdSection{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+.firstSection h3,.secondSection h3,.thirdSection h3 {
+    background-color: #247ba0;
+    margin: 0;
+    padding: 3%;
+    color: white;
+}
+
+.firstSection p, .secondSection p, .thirdSection p {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.thirdSection p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* descriptions for sections */
+.descriptions {
+    width: 75%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+/* for the footer */
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 0 10px 10px;
+    background-color: #247ba0;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: .2em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    background-color: white;
+    color: #247ba0;
+}
+
+.lastModifiedDate {
+    color: #FFE066;
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Source Serif Pro', serif; */
+}

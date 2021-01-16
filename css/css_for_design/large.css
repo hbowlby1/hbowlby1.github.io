@@ -1,0 +1,139 @@
+/* Entire document */
+html {
+    max-width: 95%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+/* header */
+header {
+    background-color: #247ba0;
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: 1em;
+}
+
+header h1,
+h2 {
+    text-align: center;
+    padding: .2em;
+    margin: .2em 0;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h2:hover {
+    color: black;
+}
+
+/* for the main */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;;
+}
+
+/* the sections */
+
+.firstSection,
+.secondSection,
+.thirdSection {
+    border: .4em solid #247ba0;
+    border-radius: .2em;
+    text-align: center;
+    margin: 15%;
+}
+
+
+.firstSection h3,
+.secondSection h3,
+.thirdSection h3 {
+    background-color: #247ba0;
+    margin: 0;
+    padding: 3%;
+    color: white;
+}
+
+.firstSection p,
+.secondSection p,
+.thirdSection p {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.firstSection a,
+.secondSection a,
+.thirdSection a {
+    font-size: 1.2em;
+    color: #247ba0;
+}
+
+.firstSection a:hover,
+.secondSection a:hover,
+.thirdSection a:hover {
+    font-size: 1.2em;
+    background-color: #247ba0;
+    color: white;
+}
+
+.firstSection img,
+.secondSection img,
+.thirdSection img {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+}
+
+/* descriptions for sections */
+.descriptions {
+    width: 75%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+/* for the footer */
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 0 10px 10px;
+    background-color: #247ba0;
+    margin: 15px auto;
+    max-width: 90%;
+    border-radius: .2em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    background-color: white;
+    color: #247ba0;
+}
+
+.lastModifiedDate {
+    color: #FFE066;
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Source Serif Pro', serif; */
