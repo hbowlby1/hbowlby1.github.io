@@ -81,12 +81,16 @@ header h2:hover {
     color: white;
 }
 
+
 .firstSection img,
 .secondSection img,
 .thirdSection img {
     margin: 0 auto;
     display: block;
     padding: 10px;
+    border-bottom: #247ba0 10px solid;
+    border-top: #247ba0 5px solid;
+    height: 500px;
 
 }
 
@@ -94,6 +98,7 @@ header h2:hover {
 .descriptions {
     margin: 0 auto;
     text-align: justify;
+    width: 22em;
 }
 
 

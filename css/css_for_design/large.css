@@ -17,122 +17,127 @@ p {
     font-size: 1.2em;
 }
 
-@media only screen and (min-width: 1400px){
-/* header */
-header {
-    background-color: #247ba0;
-    margin: auto;
-    border-radius: 1em;
-}
+@media only screen and (min-width: 1400px) {
 
-header h1,
-h2 {
-    text-align: center;
-    padding: .2em;
-    margin: .2em 0;
-    color: white;
-}
+    /* header */
+    header {
+        background-color: #247ba0;
+        margin: auto;
+        border-radius: 1em;
+    }
 
-header a {
-    text-decoration: none;
-}
+    header h1,
+    h2 {
+        text-align: center;
+        padding: .2em;
+        margin: .2em 0;
+        color: white;
+    }
 
-header h2:hover {
-    color: black;
-}
+    header a {
+        text-decoration: none;
+    }
 
-/* for the main */
+    header h2:hover {
+        color: black;
+    }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    margin:0 auto;
-}
+    /* for the main */
 
-/* the sections */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        margin: 0 auto;
+    }
 
-.firstSection,
-.secondSection,
-.thirdSection {
-    border: .4em solid #247ba0;
-    border-radius: .2em;
-    text-align: center;
-    margin:0 5px;
-}
+    /* the sections */
 
-
-.firstSection h3,
-.secondSection h3,
-.thirdSection h3 {
-    background-color: #247ba0;
-    margin: 0;
-    padding: 3%;
-    color: white;
-}
-
-.firstSection p,
-.secondSection p,
-.thirdSection p {
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.firstSection a,
-.secondSection a,
-.thirdSection a {
-    font-size: 1.2em;
-    color: #247ba0;
-}
-
-.firstSection a:hover,
-.secondSection a:hover,
-.thirdSection a:hover {
-    font-size: 1.2em;
-    background-color: #247ba0;
-    color: white;
-}
-
-.firstSection img,
-.secondSection img,
-.thirdSection img {
-    margin: 0 auto;
-     display: block;
-    padding: 10px;
-
-}
-
-/* descriptions for sections */
-.descriptions {
-    margin: 0 auto;
-    text-align: justify;
-}
+    .firstSection,
+    .secondSection,
+    .thirdSection {
+        border: .4em solid #247ba0;
+        border-radius: .2em;
+        text-align: center;
+        margin: 0 5px;
+    }
 
 
-/* for the footer */
-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 10px 0 10px 10px;
-    background-color: #247ba0;
-    margin: 15px auto;
-    /* max-width: 90%; */
-    border-radius: .2em;
-    text-align: center;
-}
+    .firstSection h3,
+    .secondSection h3,
+    .thirdSection h3 {
+        background-color: #247ba0;
+        margin: 0;
+        padding: 3%;
+        color: white;
+    }
 
-footer a {
-    color: white;
-}
+    .firstSection p,
+    .secondSection p,
+    .thirdSection p {
+        margin: 0 auto;
+        padding: 10px;
+    }
 
-footer a:hover {
-    background-color: white;
-    color: #247ba0;
-}
+    .firstSection a,
+    .secondSection a,
+    .thirdSection a {
+        font-size: 1.2em;
+        color: #247ba0;
+    }
 
-.lastModifiedDate {
-    color: #FFE066;
-}
+    .firstSection a:hover,
+    .secondSection a:hover,
+    .thirdSection a:hover {
+        font-size: 1.2em;
+        background-color: #247ba0;
+        color: white;
+    }
+
+    .firstSection img,
+    .secondSection img,
+    .thirdSection img {
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        border-bottom: #247ba0 10px solid;
+        border-top: #247ba0 5px solid;
+        height: 500px;
+
+    }
+
+    /* descriptions for sections */
+    .descriptions {
+        margin: 0 auto;
+        text-align: justify;
+        width: 22em;
+    }
+
+
+    /* for the footer */
+    footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 10px 0 10px 10px;
+        background-color: #247ba0;
+        margin: 15px auto;
+        /* max-width: 90%; */
+        border-radius: .2em;
+        text-align: center;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer a:hover {
+        background-color: white;
+        color: #247ba0;
+    }
+
+    .lastModifiedDate {
+        color: #FFE066;
+    }
 }
 
 /* font-family: 'Open Sans', sans-serif;
