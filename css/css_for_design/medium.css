@@ -41,12 +41,6 @@ header h2:hover {
 }
 
 
-.thirdSection{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-
 .firstSection h3,.secondSection h3,.thirdSection h3 {
     background-color: #247ba0;
     margin: 0;
