@@ -1,4 +1,4 @@
-@media screen and (max-width: 43em){
+@media screen and (max-width: 945px){
     
 /* header */
 header div {
@@ -29,6 +29,7 @@ header h2:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 0;
 }
 
 /* the sections */
@@ -37,8 +38,7 @@ header h2:hover {
     border: .4em solid #247ba0;
     border-radius: .2em;
     text-align: center;
-    margin: 15%;
-    row-gap: 0;
+    margin: 10px auto;
 }
 
 .firstSection{
@@ -61,9 +61,24 @@ header h2:hover {
 }
 
 .firstSection p, .secondSection p, .thirdSection p {
-    width: 75%;
     margin: 0 auto;
     padding: 0;
+}
+
+
+.firstSection a,
+.secondSection a,
+.thirdSection a {
+    font-size: 1.2em;
+    color: #247ba0;
+}
+
+.firstSection a:hover,
+.secondSection a:hover,
+.thirdSection a:hover {
+    font-size: 1.2em;
+    background-color: #247ba0;
+    color: white;
 }
 
 .firstSection img,
@@ -72,13 +87,11 @@ header h2:hover {
     margin: 0 auto;
     display: block;
     padding: 10px;
-    max-width: 75%;
 
 }
 
 /* descriptions for sections */
 .descriptions {
-    width: 75%;
     margin: 0 auto;
     text-align: justify;
 }

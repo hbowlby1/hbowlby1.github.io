@@ -1,4 +1,4 @@
-@media screen and (max-width: 64em){
+@media screen and (max-width: 1250px){
 /* header */
 header {
     background-color: #247ba0;
@@ -26,9 +26,9 @@ header h2:hover {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
-    column-gap: 0;
+    grid-gap: 25px;
 }
 
 /* the sections */
@@ -37,7 +37,6 @@ header h2:hover {
     border: .4em solid #247ba0;
     border-radius: .2em;
     text-align: center;
-    margin: 15%;
 }
 
 
@@ -48,8 +47,23 @@ header h2:hover {
     color: white;
 }
 
+
+.firstSection a,
+.secondSection a,
+.thirdSection a {
+    font-size: 1.2em;
+    color: #247ba0;
+}
+
+.firstSection a:hover,
+.secondSection a:hover,
+.thirdSection a:hover {
+    font-size: 1.2em;
+    background-color: #247ba0;
+    color: white;
+}
+
 .firstSection p, .secondSection p, .thirdSection p {
-    width: 75%;
     margin: 0 auto;
     padding: 0;
 }
@@ -61,18 +75,11 @@ header h2:hover {
     margin: 0 auto;
     display: block;
     padding: 10px;
-    max-width: 75%;
 
-}
-
-.thirdSection p {
-    width: 75%;
-    margin: 0 auto;
 }
 
 /* descriptions for sections */
 .descriptions {
-    width: 75%;
     margin: 0 auto;
     text-align: justify;
 }
