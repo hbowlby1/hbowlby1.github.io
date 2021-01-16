@@ -1,7 +1,7 @@
 /* Entire document */
-html {
+/* html {
     max-width: 95%;
-}
+} */
 
 h1,
 h2,
@@ -17,11 +17,11 @@ p {
     font-size: 1.2em;
 }
 
+@media only screen and (min-width: 64em){
 /* header */
 header {
     background-color: #247ba0;
     margin: 0 auto;
-    max-width: 90%;
     border-radius: 1em;
 }
 
@@ -93,19 +93,10 @@ header h2:hover {
     color: white;
 }
 
-.firstSection img,
-.secondSection img,
-.thirdSection img {
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-    max-width: 75%;
-
-}
 
 /* descriptions for sections */
 .descriptions {
-    width: 75%;
+    max-width: 75%;
     margin: 0 auto;
     /* text-align: justify; */
 }
@@ -118,7 +109,7 @@ footer {
     padding: 10px 0 10px 10px;
     background-color: #247ba0;
     margin: 15px auto;
-    max-width: 90%;
+    /* max-width: 90%; */
     border-radius: .2em;
     text-align: center;
 }
@@ -135,7 +126,7 @@ footer a:hover {
 .lastModifiedDate {
     color: #FFE066;
 }
-
+}
 
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Source Serif Pro', serif; */

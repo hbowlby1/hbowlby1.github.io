@@ -1,9 +1,8 @@
-@media screen and (max-width: 62em){
+@media screen and (max-width: 64em){
 /* header */
 header {
     background-color: #247ba0;
     margin: 0 auto;
-    max-width: 90%;
     border-radius: 1em;
 }
 
@@ -27,7 +26,7 @@ header h2:hover {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: 1fr 1fr;
     column-gap: 0;
 }
@@ -62,6 +61,15 @@ header h2:hover {
 }
 
 
+.firstSection img,
+.secondSection img,
+.thirdSection img {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    max-width: 75%;
+
+}
 
 .thirdSection p {
     width: 75%;
@@ -83,7 +91,6 @@ footer {
     padding: 10px 0 10px 10px;
     background-color: #247ba0;
     margin: 15px auto;
-    width: 90%;
     border-radius: .2em;
     text-align: center;
 }
