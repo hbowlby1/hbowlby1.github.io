@@ -105,6 +105,8 @@
         margin: 0 auto;
         text-align: justify;
         width: 22em;
+        padding: 5px;
+        width: 75%;
     }
 
 
