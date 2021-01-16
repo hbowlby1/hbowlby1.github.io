@@ -1,132 +1,138 @@
-@media screen and (max-width: 945px){
-    
-/* header */
-header div {
-    background-color: #247ba0;
-    margin: 0 auto;
-    border-radius: 1em;
-}
+@media screen and (max-width: 945px) {
 
-header h1,
-h2 {
-    text-align: center;
-    padding: .2em;
-    margin: .2em 0;
-    color: white;
-}
+    /* header */
+    header div {
+        background-color: #247ba0;
+        margin: 0 auto;
+        border-radius: 1em;
+    }
 
-header a {
-    text-decoration: none;
-}
+    header h1,
+    h2 {
+        text-align: center;
+        padding: .2em;
+        margin: .2em 0;
+        color: white;
+    }
 
-header h2:hover {
-    color: black;
-}
+    header a {
+        text-decoration: none;
+    }
 
-/* for the main */
+    header h2:hover {
+        color: black;
+    }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 0;
-}
+    /* for the main */
 
-/* the sections */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 0;
+    }
 
-.firstSection,.secondSection,.thirdSection {
-    border: .4em solid #247ba0;
-    border-radius: .2em;
-    text-align: center;
-    margin: 10px auto;
-}
+    /* the sections */
 
-.firstSection{
-    grid-row: 1;
-}
+    .firstSection,
+    .secondSection,
+    .thirdSection {
+        border: .4em solid #247ba0;
+        border-radius: .2em;
+        text-align: center;
+        margin: 10px auto;
+    }
 
-.secondSection{
-    grid-row: 2;
-}
+    .firstSection {
+        grid-row: 1;
+    }
 
-.thirdSection{
-    grid-row: 3;
-}
+    .secondSection {
+        grid-row: 2;
+    }
 
-.firstSection h3,.secondSection h3,.thirdSection h3 {
-    background-color: #247ba0;
-    margin: 0;
-    padding: 3%;
-    color: white;
-}
+    .thirdSection {
+        grid-row: 3;
+    }
 
-.firstSection p, .secondSection p, .thirdSection p {
-    margin: 0 auto;
-    padding: 0;
-}
+    .firstSection h3,
+    .secondSection h3,
+    .thirdSection h3 {
+        background-color: #247ba0;
+        margin: 5px;
+        padding: 3%;
+        color: white;
+    }
 
-
-.firstSection a,
-.secondSection a,
-.thirdSection a {
-    font-size: 1.2em;
-    color: #247ba0;
-}
-
-.firstSection a:hover,
-.secondSection a:hover,
-.thirdSection a:hover {
-    font-size: 1.2em;
-    background-color: #247ba0;
-    color: white;
-}
+    .firstSection p,
+    .secondSection p,
+    .thirdSection p {
+        margin: 0 auto;
+        padding: 0;
+    }
 
 
-.firstSection img,
-.secondSection img,
-.thirdSection img {
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-    border-bottom: #247ba0 10px solid;
-    border-top: #247ba0 5px solid;
-    height: 500px;
+    .firstSection a,
+    .secondSection a,
+    .thirdSection a {
+        font-size: 1.2em;
+        color: #247ba0;
+    }
 
-}
-
-/* descriptions for sections */
-.descriptions {
-    margin: 0 auto;
-    text-align: justify;
-    width: 22em;
-}
+    .firstSection a:hover,
+    .secondSection a:hover,
+    .thirdSection a:hover {
+        font-size: 1.2em;
+        background-color: #247ba0;
+        color: white;
+    }
 
 
-/* for the footer */
-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 10px 0 10px 10px;
-    background-color: #247ba0;
-    margin: 15px auto;
-    border-radius: .2em;
-    text-align: center;
-}
+    .firstSection img,
+    .secondSection img,
+    .thirdSection img {
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        border-bottom: #247ba0 10px solid;
+        border-top: #247ba0 5px solid;
+        height: 500px;
 
-footer a {
-    color: white;
-}
+    }
 
-footer a:hover {
-    background-color: white;
-    color: #247ba0;
-}
-
-.lastModifiedDate {
-    color: #FFE066;
-}
+    /* descriptions for sections */
+    .descriptions {
+        margin: 0 auto;
+        text-align: justify;
+        width: 22em;
+    }
 
 
-/* font-family: 'Open Sans', sans-serif;
+    /* for the footer */
+    footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 10px 0 10px 10px;
+        background-color: #247ba0;
+        margin: 15px auto;
+        border-radius: .2em;
+        text-align: center;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer a:hover {
+        background-color: white;
+        color: #247ba0;
+    }
+
+    .lastModifiedDate {
+        color: #FFE066;
+    }
+
+
+    /* font-family: 'Open Sans', sans-serif;
 font-family: 'Source Serif Pro', serif; */
 }
