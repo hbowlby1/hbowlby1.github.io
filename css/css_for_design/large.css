@@ -124,6 +124,7 @@ p {
         /* max-width: 90%; */
         border-radius: .2em;
         text-align: center;
+        color:white;
     }
 
     footer a {
