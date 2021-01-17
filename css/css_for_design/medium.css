@@ -92,7 +92,7 @@
     /* descriptions for sections */
     .descriptions {
         margin: 0 auto;
-        text-align: justify;
+        text-align: left;
         width: 22em;
     }
 
