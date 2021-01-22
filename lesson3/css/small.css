@@ -3,7 +3,7 @@ html{
     margin: 0 auto;
     width: 75%;
     background-color: #03312e;
-    color: #02c3bd;
+    color: white;
 }
 
 header, nav, footer{
@@ -20,7 +20,7 @@ header{
 nav ul{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     /* align-self: center; */
     /* align-content: space-between; */
 }
@@ -28,7 +28,6 @@ nav ul{
 nav li{
     list-style: none;
     padding: 10px;
-    margin-left: 25px;
 }
 
 nav li:hover{
@@ -40,3 +39,25 @@ nav a{
     color: white;
     text-decoration: none;
 }
+
+section{
+    background-color: #037171;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+
+h3{
+    text-align: center;
+}
+
+section p{
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+section img{
+    margin-left: 32%;
+}
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
