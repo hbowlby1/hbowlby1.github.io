@@ -1,0 +1,47 @@
+@media only screen and (min-width: 60em){
+
+html{
+    width: 50%;
+    margin: 0 auto;
+}
+
+header, nav, footer{
+    background-color: #247BA0;
+    text-align: center;
+    color: white;
+    padding: 1px;
+}
+
+header{
+    border: 2px solid red;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+nav li{
+    list-style: none;
+    padding: 10px;
+    margin-left: 25px;
+}
+/* 
+nav li:hover{
+    background-color: white;
+    color: black;
+} */
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    
+}
+}
