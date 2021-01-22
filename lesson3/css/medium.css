@@ -11,5 +11,10 @@
     nav ul li{
         flex: 1 1 100%;
         justify-content: flex-start;
+        margin-right: 30px;
+    }
+
+    img{
+        width: 50%;
     }
 }
