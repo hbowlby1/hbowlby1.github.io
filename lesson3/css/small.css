@@ -1,6 +1,7 @@
 
 html{
     margin: 0 auto;
+    width: 75%;
     background-color: #03312e;
     color: #02c3bd;
 }
@@ -19,9 +20,9 @@ header{
 nav ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-    align-content: space-between;
+    /* justify-content: center; */
+    /* align-self: center; */
+    /* align-content: space-between; */
 }
 
 nav li{
