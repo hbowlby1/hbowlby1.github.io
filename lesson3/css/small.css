@@ -1,10 +1,12 @@
 
 html{
     margin: 0 auto;
+    background-color: #03312e;
+    color: #02c3bd;
 }
 
 header, nav, footer{
-    background-color: #247BA0;
+    background-color: #00b9ae;
     text-align: center;
     color: white;
     padding: 1px;
@@ -29,7 +31,7 @@ nav li{
 }
 
 nav li:hover{
-    background-color: gray;
+    background-color: #037171;
     width: 20%;
 }
 
