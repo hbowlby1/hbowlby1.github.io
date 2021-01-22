@@ -1,8 +1,4 @@
-@media only screen and (min-width: 37.5em){
-    html{
-        width: 75%;
-    }
-    
+@media only screen and (max-width: 37.5em){
     table{
         width: 70%;
         border-collapse: collapse;
@@ -14,5 +10,6 @@
 
     nav ul li{
         flex: 1 1 100%;
+        justify-content: flex-start;
     }
 }

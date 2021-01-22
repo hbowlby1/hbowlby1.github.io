@@ -1,8 +1,43 @@
-@media only screen and (min-width: 60em){
- 
 html{
-    width: 50%;
     margin: 0 auto;
+    background-color: #03312e;
+    color: white;
+}
+
+header, nav, footer{
+    background-color: #00b9ae;
+    text-align: center;
+    color: white;
+    padding: 1px;
+}
+
+header, nav, footer, h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    font-size: 40px;
+}
+
+nav{
+    font-size: 30px;
+}
+
+footer{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16;
 }
 
 nav ul{
@@ -13,8 +48,94 @@ nav ul{
     /* align-content: space-between; */
 }
 
-table{
+nav li{
+    list-style: none;
+    padding: 10px;
+    border-style: solid;
+}
+
+nav li:hover{
+    background-color: #037171;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    background-color: #037171;
+    margin-top: 25px;
+    border-radius: 3px;
     width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+section p{
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+section img{
+    margin-left: 32%;
+}
+
+table{
     margin: 0 auto;
+    font-size: 24px;
+    width: 100%;
     border-collapse: collapse;
+}
+
+table, tr, td{
+    border: 1px solid cyan;
+}
+
+.row1 td:nth-of-type(5){
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    background-color: #00b9ae;
+    
+}
+
+.row2 td:nth-of-type(5){
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background-color: #00b9ae;
+    
+}
+
+.row3 td:nth-of-type(5){
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #00b9ae;
+    
+}
+
+.row4 td:nth-of-type(5){
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background-color: #00b9ae;
+    
+}
+.row5 td:nth-of-type(5){
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    background-color: #00b9ae;
+    
+}
+.row6 td:nth-of-type(5){
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #00b9ae;
+    
+}
+.row7 td:nth-of-type(5){
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #037171;
+    
 }
