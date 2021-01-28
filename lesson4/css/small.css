@@ -1,0 +1,74 @@
+/* entire document */
+
+p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header content */
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #00B9AE;
+    border-radius: 3px; 
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.headerAndMotto h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+.headerContainer img{
+    width: 150px;
+    height: 150px;
+}
+/* navigation content */
+
+.navbar{
+    background-color: #037171;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -30px;
+}
+
+.navbar ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.navbar li{
+    padding: 40px;
+    list-style: none;
+}
+
+.navbar li:hover{
+    background-color: #00B9AE;
+    cursor: pointer;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+/* body */
+
+.container{
+    background-color: #037171;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+/* footer */
