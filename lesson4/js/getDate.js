@@ -9,7 +9,7 @@ function getTheDate() {
 
     let theYear = d.getFullYear().toString();
 
-    document.querySelector(".getDate").innerHTML = "&copy " + theYear;
+    document.querySelector(".getDate").innerHTML = "&copy Beyond the Weather " + theYear;
 }
 
 //gets the date for when the document was last modified
