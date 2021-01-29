@@ -67,6 +67,18 @@ p{
     color: white;
 }
 
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
 /* body */
 
 .container{
@@ -79,15 +91,6 @@ p{
     text-align: center;
 }
 
-.hamburger{
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.hamburger:focus{
-    outline: none;
-}
 
 /* footer */
 

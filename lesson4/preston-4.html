@@ -28,10 +28,10 @@
     </header>
 
     <nav class="navbar">
-        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <button class="hamburger" id="hamburger" onClick="toggleMenu()">
             <i class="fa fa-bars"></i>
         </button>
-        <ul>
+        <ul id="navigation">
             <li class="active"><a href="preston-4.html">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -67,11 +67,12 @@
             <p><span class="getDate"></span> | Harrison Bowlby | Arizona | <a href="https://www.byui.edu/online"
                     target="_blank">BYUI Online
                     Learning</a></p>
-            <div class="lastModifiedDate"></div>
+            <div id="theDate"></div>
         </div>
     </footer>
 
     <script src="js/getDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
 </body>
 
 </html>
