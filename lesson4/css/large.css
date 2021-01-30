@@ -55,6 +55,7 @@ ul{
     padding: 15px;
     border: 5px solid #009f93;
     flex-grow: 1;
+    text-align: center;
 }
 
 .navbar li:hover{
