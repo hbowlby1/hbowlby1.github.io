@@ -9,6 +9,10 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
+ul{
+    padding-inline-start: 5px;
+}
+
 /* header content */
 
 .headerContainer{
@@ -40,9 +44,8 @@ p{
 .navbar ul{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
-
 }
 
 .navbar li{
@@ -51,6 +54,7 @@ p{
     align-self: center;
     padding: 15px;
     border: 5px solid #009f93;
+    flex-grow: 1;
 }
 
 .navbar li:hover{
