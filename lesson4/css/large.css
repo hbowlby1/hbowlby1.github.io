@@ -84,6 +84,7 @@ p{
 .container{
     background-color: #009f93;
     margin: 0 auto;
+    width: 75%;
 
 }
 
@@ -91,10 +92,17 @@ p{
     text-align: center;
 }
 
+.center p{
+    border: 1px dotted black;
+    padding: 5px;
+}
+
 
 /* footer */
 
 footer{
+    margin: 0 auto;
     background-color:#00B9AE;
-   text-align: center;
+    text-align: center;
+    width: 75%;
 }

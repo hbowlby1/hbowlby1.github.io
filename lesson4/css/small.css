@@ -1,4 +1,16 @@
 @media screen and (max-width: 1057px){
+    /* header elements */
+
+    
+    .headerContainer h1{
+        font-size: 28px;
+        float: right;
+
+    }
+
+    .headerContainer img{
+        margin: 0;
+    }
     /* navbar settings */
     
     .navbar ul{
@@ -11,7 +23,18 @@
         margin: 0 auto;
     }
 
-    .navigation.show{
-        display: flex;
+    #nav-ul.show{
+        display: block;
+        width: 75%;
+        margin: 5px auto;
+        font-size: 16px;
+        padding: 0;
     }
+}
+
+/* footer */
+
+footer p{
+    margin: 0 auto;
+    width: 75%;
 }

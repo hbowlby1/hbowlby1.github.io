@@ -1,8 +1,6 @@
-function toggleMenu(){
-    var hamburger = document.querySelector('#hamburger');
-    var theNav = document.querySelector('#navigation');
+const hamburger = document.querySelector("#hamburger");
+const theNav = document.querySelector("#nav-ul");
 
-    hamburger.addEventListener('click', () => {
-        theNav.classList.toggle('show');
-    })
-}
+hamburger.addEventListener('click', () => {
+    theNav.classList.toggle('show');
+})
