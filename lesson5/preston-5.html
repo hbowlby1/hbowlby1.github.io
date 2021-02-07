@@ -18,10 +18,10 @@
 
 <body>
     <header class="headerContainer">
-        <!-- insert pancake thing here -->
-        <picture>
-            <img src="images/logo.png">
-        </picture>
+        <div class="pancake">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <img src="images/logo.png">
         <div class="headerAndMotto">
             <h1>Beyond the Weather</h2>
                 <p>Look beyond the weather</p>
@@ -30,7 +30,7 @@
 
     <nav class="navbar">
         <button class="hamburger" id="hamburger">
-            <i><i>&#x2630;</i></i>
+            <i>&#x2630;</i>
         </button>
         <ul class="navigation" id="nav-ul">
             <li class="active"><a href="preston-5.html">Home</a></li>
@@ -43,19 +43,18 @@
     </nav>
 
     <main class="container">
-        <section class="center">
-            <h2>Preston Idaho</h2>
-        </section>
-
         <div class="herodiv">
-            <img src="images\weather_image.jpg">
             <section>
-                <div class="summary">
+                <h2>Preston Idaho</h2>
+                <img src="images\weather_image.jpg">
+                <section>
+                <div class="summary" id="summaryMobile">
                     <p>Weather Summary</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eligendi laboriosam neque vel, totam
                         molestiae minus sit a quod amet natus cum fugiat vitae exercitationem excepturi odio aspernatur
                         architecto veritatis.</p>
                 </div>
+                </section>
             </section>
         </div>
         <section class="center forecast">
@@ -107,14 +106,16 @@
         </div>
         <section class="contactContainer">
             <img src="images/map.jpg" class="map">
-            <div>
-            <p>Contact Information</p>
-            <p>123 somewhere street</p>
-            <p>123-555-4567</p>
-            <a href="#">beyondtheweather@notanemail.com</a>
-            <a href="#"><img src="images/facebook.png"class="socialIcons"></a>
-            <a href="#"><img src="images/twitter.png" class="socialIcons"></a>
-            <a href="#"><img src="images/youtube.png" class="socialIcons"></a>
+            <div class="contactContents">
+                <p>Contact Information</p>
+                <p>123 somewhere street</p>
+                <p>123-555-4567</p>
+                <a href="#">beyondtheweather@notanemail.com</a>
+                <div>
+                <a href="#"><img src="images/facebook.png" class="socialIcons"></a>
+                <a href="#"><img src="images/twitter.png" class="socialIcons"></a>
+                <a href="#"><img src="images/youtube.png" class="socialIcons"></a>
+                </div>
             </div>
         </section>
     </main>

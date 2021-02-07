@@ -1,29 +1,30 @@
-@media screen and (max-width: 1057px){
+@media screen and (max-width: 1057px) {
     /* header elements */
 
-    
-    .headerContainer h1{
+
+    .headerContainer h1 {
         font-size: 28px;
         float: right;
 
     }
 
-    .headerContainer img{
-        margin: 0;
+    .headerContainer img {
+        margin: -20px;
     }
+
     /* navbar settings */
-    
-    .navbar ul{
+
+    .navbar ul {
         display: none;
     }
 
-    .hamburger{
+    .hamburger {
         text-align: center;
         display: block;
         margin: 0 auto;
     }
 
-    #nav-ul.show{
+    #nav-ul.show {
         display: block;
         width: 75%;
         margin: 5px auto;
@@ -31,11 +32,46 @@
         padding: 0;
         text-align: center;
     }
-}
 
-/* footer */
+    /* summary */
 
-footer p{
-    margin: 0 auto;
-    width: 75%;
+    .herodiv{
+        display: block;
+    }
+
+    #summaryMobile {
+        display: block;
+        position: static;
+        width: 95%;
+        margin: auto;
+
+    }
+
+    /* five day forecast */
+
+    .forecast{
+        margin-top: 10px /*!important*/;
+    }
+
+    /* contact card */
+
+    .contactContainer{
+        display: block;
+    }
+
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contactContents{
+        text-align: center;
+    }
+
+    /* footer */
+
+    footer p {
+        margin: 0 auto;
+        width: 75%;
+    }
 }

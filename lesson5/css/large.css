@@ -16,21 +16,41 @@ ul{
 /* header content */
 
 .headerContainer{
-    display: flex;
-    flex-direction: row;
     background-color: #00B9AE;
-    border-radius: 3px; 
-    flex-wrap: wrap;
-    flex-grow: 1;
+    height: 150px;
+}
+
+.headerAndMotto{
+    display: flex;
+    flex-direction: column;
 }
 
 .headerAndMotto h1{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.headerAndMotto p{
+    text-align: center;
+    margin: 0;
 }
 .headerContainer img{
     width: 150px;
     height: 150px;
+    margin-top: -25px;
+}
+
+/* pancake notifier */
+
+.pancake{
+    display: none;
+    margin: 0 auto;
+}
+
+.pancake p{
+    text-align: center;
 }
 
 /* navigation content */
@@ -118,6 +138,10 @@ ul{
     border: 1px solid black;
 }
 
+.herodiv h2{
+    text-align: center;
+}
+
 .herodiv img{
     position: relative;
     width: 100%;
@@ -129,7 +153,7 @@ ul{
     position: absolute;
     background-color: rgba(0,0,0,0.7);
     width: 25%;
-    top: 40%;
+    top: 24em;
     left: 25%;
     padding: 5px;
     color: white;
@@ -192,6 +216,7 @@ ul{
     column-gap: 10px;
     justify-items: center;
     /* grid-auto-flow: column; */
+    background-color:#00B9AE;
 }
 
 .contactContainer p{

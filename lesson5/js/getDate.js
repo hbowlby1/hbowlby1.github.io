@@ -21,4 +21,8 @@ function lastModifiedDoc() {
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Ocotber", "November", "December"];
     document.querySelector("#theDate").innerHTML = days[d.getDay()] + ", " + d.getDate() + " "+ month[d.getMonth()] + " " +  d.getFullYear();
+
+    if(days[d.getDay()] == "Saturday"){
+        document.querySelector(".pancake").style.display = "block";
+    }
 }
