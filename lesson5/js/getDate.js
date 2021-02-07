@@ -22,7 +22,7 @@ function lastModifiedDoc() {
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Ocotber", "November", "December"];
     document.querySelector("#theDate").innerHTML = days[d.getDay()] + ", " + d.getDate() + " "+ month[d.getMonth()] + " " +  d.getFullYear();
 
-    if(days[d.getDay()] == "Saturday"){
+    if(days[d.getDay()] == "Friday"){
         document.querySelector(".pancake").style.display = "block";
     }
 }
