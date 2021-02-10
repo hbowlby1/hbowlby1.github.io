@@ -1,0 +1,83 @@
+@media screen and (max-width: 1057px) {
+    /* header elements */
+
+
+    .headerContainer h1 {
+        font-size: 28px;
+        float: right;
+
+    }
+
+    .headerContainer img {
+        margin: -20px;
+    }
+
+    /* navbar settings */
+
+    .navbar ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #nav-ul.show {
+        display: block;
+        /* width: 75%; */
+        margin: 5px auto;
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* summary */
+
+    .herodiv{
+        display: block;
+    }
+
+    #summaryMobile {
+        display: block;
+        position: static;
+        width: 95%;
+        margin: auto;
+
+    }
+
+    /* five day forecast */
+
+    .forecast{
+        margin-top: 10px /*!important*/;
+    }
+
+    /* article */
+
+    .anArticle img{
+        width: 75%;
+        float: none;
+    }
+
+    /* contact card */
+
+    .contactContainer{
+        display: block;
+    }
+
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contactContents{
+        text-align: center;
+    }
+
+    /* footer */
+
+    footer p {
+        margin: 0 auto;
+        width: 75%;
+    }
+}
