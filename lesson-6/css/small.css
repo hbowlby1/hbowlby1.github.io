@@ -1,8 +1,11 @@
 @media screen and (max-width: 1057px) {
+    
+    
     /* header elements */
-
+    
 
     .headerContainer h1 {
+        display: block;
         font-size: 28px;
         float: right;
 
@@ -10,11 +13,19 @@
 
     .headerAndMotto{
         margin-top: 50px;
+        float: none;
+        margin-left: 50px;
     }
+
 
     .headerContainer img {
         margin: -20px;
+        width: 100px;
     }
+
+    /* .pancake{
+        margin-bottom: -35px;
+    } */
 
     /* navbar settings */
 
@@ -34,6 +45,12 @@
         font-size: 20px;
         padding: 0;
         text-align: center;
+    }
+
+    /* main */
+
+    .container{
+        width: 100%;
     }
 
     /* summary */
@@ -57,12 +74,33 @@
     /* five day forecast */
 
     .forecast{
-        /* display: none; */
         margin-top: 10px /*!important*/;
+        width: 90%;
+    }
+
+    .forecast div{
+        width: 100%;
     }
 
     .forecastimg{
-        width: 75%;
+        width: 50%;
+    }
+
+    .forecast p{
+        font-size: 16px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .forecast div p:nth-of-type(2){
+        border-top: 3px solid black;
+
+    }
+
+    @media screen and (max-width: 670px){
+        .forecast{
+            display: none;
+        }
     }
 
     /* article */
