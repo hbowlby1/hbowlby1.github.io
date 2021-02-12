@@ -10,7 +10,7 @@ p{
 }
 
 ul{
-    padding-inline-start: 5px;
+    padding: 5px;
 }
 
 /* header content */
@@ -184,6 +184,14 @@ ul{
     height: 100%;
 }
 
+.forecast div p:nth-of-type(1){
+    border-bottom: 3px solid black;
+}
+
+.forecast div p:nth-of-type(2){
+    border-top: 3px solid black;
+}
+
 /* The article */
 
 .articleContainer{
@@ -216,6 +224,7 @@ ul{
     justify-items: center;
     /* grid-auto-flow: column; */
     background-color:#00B9AE;
+    padding: 25px;
 }
 
 .contactContainer p{
