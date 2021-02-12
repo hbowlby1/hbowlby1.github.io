@@ -194,7 +194,7 @@ h3{
 }
 
 .forecast p{
-    font-size: .7em;
+    font-size: 16px;
 }
 
 .forecast div p:nth-of-type(1){
@@ -226,6 +226,7 @@ h3{
 .anArticle p{
     text-align: left;
     max-height: 50%;
+    color: white;
 }
 
 /* contact information */
@@ -244,8 +245,14 @@ h3{
     grid-column: span 2;
 }
 
+.contactContainer p:nth-child(4){
+    padding-left: 0;
+}
+
 .contactContainer a{
     grid-column: span 2;
+    color: black;
+    margin: 10px;
     
 }
 
@@ -273,4 +280,8 @@ footer{
     background-color:#00B9AE;
     text-align: center;
     width: 75%;
+}
+
+footer a{
+    color: black;
 }
