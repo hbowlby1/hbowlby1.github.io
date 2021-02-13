@@ -223,6 +223,10 @@ h3{
     width: 250px;
 }
 
+.anArticle h3{
+    color: white;
+}
+
 .anArticle p{
     text-align: left;
     max-height: 50%;
