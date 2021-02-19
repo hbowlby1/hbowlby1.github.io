@@ -298,6 +298,11 @@ footer a{
 
 /* image gallery */
 
+#palmTree{
+    width: 600px;
+    height: 400px;
+}
+
 @media screen and (min-width: 1058px){
 
 h1{
@@ -319,7 +324,7 @@ h1{
 }
 
 .containerGallery img:hover{
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.4);
     transition: box-shadow .3s;
 }
 
