@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Harrison Bowlby">
+    <meta name="description"
+        content="Beyond The Weather site for Harrison Bowlby in WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Beyond the Weather</title>
+</head>
+
+<body>
+    <div class="pancake">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header class="headerContainer">
+        <img src="img/logo.png" alt="Logo for Beyond the Weather." id="logo">
+        <div class="headerAndMotto">
+            <h1>Beyond the Weather</h1>
+            <p>Look beyond the weather</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" id="hamburger">
+            <i>&#x2630; Menu</i>
+        </button>
+        <ul class="navigation" id="nav-ul">
+            <li><a href="../lesson-6/preston-6.html">Home</a></li>
+            <li><a href="../lesson-6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <fieldset>
+            <legend>Your Information</legend>
+            <label>Full Name: <input type="text" name="Full Name" pattern="[A-Za-z]{5,}" required></label>
+            <label>Email: <input type="email" name="email" placeholder="johnsmith@example.com"></label>
+            <label>Phone: <input type="tel" name="phone" required></label>
+            <label>Zip Code: <input type="number" name="zip" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>About The Storm</legend>
+            <label>Date of the Storm: <input type="date" name="storm-date"></label>
+            <label for="stormType">Type of Storm:</label>
+            <input list="storm_type" id="stormType" name="stormType" />
+            <datalist id="storm_type">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
+            <label for="rating">Severity of the Storm: &nbsp;&nbsp;&nbsp;
+                <!-- add the javascript for this to function -->
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+    
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+
+            <label>Storm Region: 
+                <select name="region">
+                    <option value="" selected disabled>Select Region ... &#9662;</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                </select>
+            </label>
+
+            <label>Are you in Danger:</label>
+            <label>Yes: <input type="radio" name="danger" value="yes"></label>
+            <label>Maybe: <input type="radio" name="danger" value="maybe"></label>
+            <label>No: <input type="radio" name="danger" value="no"></label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label>More Information or Comments: </label>
+            <textarea name="more-info" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Report your Storm">
+
+    </main>
+
+    <footer>
+        <div class="hfBackground">
+            <p><span class="getDate"></span> | Harrison Bowlby | Arizona | <a href="https://www.byui.edu/online"
+                    target="_blank">BYUI Online
+                    Learning</a></p>
+            <div id="theDate"></div>
+        </div>
+    </footer>
+
+    <script src="js/getDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

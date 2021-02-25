@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px){
+    h1{
+        text-align: center;
+    }
+
+    .containerGallery{
+        display: block;
+    }
+
+    .containerGallery img{
+        margin-left: 13%;
+    }
+}
