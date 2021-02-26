@@ -50,7 +50,7 @@
     /* main */
 
     .container{
-        width: 100%;
+        width: 60%;
     }
 
     /* summary */
@@ -158,4 +158,5 @@
     .containerGallery p{
         display: none;
     }
+    
 }

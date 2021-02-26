@@ -1,13 +1,30 @@
 @media screen and (max-width: 600px){
+
     h1{
         text-align: center;
     }
 
+    .container{
+        width: 100%;
+    }
+
+    /* Your infomration section */
+
+    /* gallery css */
     .containerGallery{
         display: block;
     }
 
     .containerGallery img{
         margin-left: 13%;
+    }
+
+
+    /* storm center */
+
+    form input.submit{
+
+        margin: 0 0 2rem 10%;
+
     }
 }
