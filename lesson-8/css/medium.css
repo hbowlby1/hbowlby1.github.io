@@ -159,4 +159,10 @@
         display: none;
     }
     
+
+    /* storm page */
+
+    form input.submit{
+        margin: 0 0 2rem 2%;
+    }
 }
