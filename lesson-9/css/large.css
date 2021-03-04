@@ -435,6 +435,7 @@ h1{
     width: 70%;
     margin-left: 15%;
     margin-top: 3%;
+    box-shadow: 10px 5px 5px #037171;
 }
 
 .cards h2, h5, p{
