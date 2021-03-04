@@ -1,4 +1,4 @@
-const requestURL = 'https://hbowlby1.github.io/week-9/json/towndata.json';
+const requestURL = 'https://hbowlby1.github.io/lesson-9/json/towndata.json';
 
 fetch(requestURL)
   .then(function (response) {
@@ -22,7 +22,8 @@ fetch(requestURL)
         p1.innerHTML = "Year Founded: " + towns[i].yearFounded; 
         p2.innerHTML = "Population: " + towns[i].currentPopulation;
         p3.innerHTML = "Average Rainfall: " + towns[i].averageRainfall;
-        image.setAttribute('src', "images/" + towns[i].photo);
+        image.setAttribute('src', "img/" + towns[i].photo);
+
 
         let div = document.createElement('div');
 
