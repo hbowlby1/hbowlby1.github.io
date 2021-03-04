@@ -165,4 +165,39 @@
     form input.submit{
         margin: 0 0 2rem 2%;
     }
+
+    /* home page */
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 33%);
+    }
+
+    .cards section:nth-child(2) div{
+        float: right;
+        margin-right: 5%;
+    }
+
+    .cards section:nth-child(2) img{
+        float: left;
+        margin-left: 5%;
+    }
+
+    .cards section div{
+        float: left;
+        width: 40%;
+        margin-top: 5%;
+        margin-left: 20px;
+    }
+
+
+    .cards img{
+        float: right;
+        width: 40%;
+        height: 70%;
+        margin-top: 5%;
+        margin-right: 3%;
+        margin-left: 10%;
+    }
 }
