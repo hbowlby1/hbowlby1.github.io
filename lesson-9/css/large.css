@@ -427,8 +427,14 @@ h1{
     gap: 10px;
 }
 
+
+
 .cards section{
     background-color:#009f93;
+}
+
+.cards section:nth-child(2){
+    order: -1;
 }
 
 .cards img{
