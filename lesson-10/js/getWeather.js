@@ -10,7 +10,6 @@ fetch(apiURL)
         document.getElementById('low-temp').innerHTML = Math.round(jsObject.main.temp_min) + " &#176;F";
         document.getElementById('windSpeed').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
-        document.getElementById('current-desc').textContent = jsObject.weather[0].description;
 
         // Calculate Windchill (from current-temp - jsObject.main.temp & windspeed - jsObject.wind.speed) for wc (windchill) variable
         let t = (Math.round(jsObject.main.temp));
@@ -21,7 +20,7 @@ fetch(apiURL)
             wc = Math.round(calc) + " &#176;F";
         }
         // Inject wc var into windchill innerHTML element
-        document.getElementById("windchill").innerHTML = wc;
+        document.getElementById("windChill").innerHTML = wc;
     });
 
 // Forecast API from OpenWeatherMap.org

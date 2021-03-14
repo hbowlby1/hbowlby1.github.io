@@ -289,3 +289,14 @@ footer{
 footer a{
     color: black;
 }
+
+/* weather api */
+
+.forecast ul li div{
+    width: 200%;
+}
+
+.forecast img{
+    width: 100%;
+    height: 100%
+}
