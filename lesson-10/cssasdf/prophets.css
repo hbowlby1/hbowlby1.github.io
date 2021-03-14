@@ -1,0 +1,67 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 2px;
+    padding: 20px;
+    background-color: rgba(61, 55, 55, 0.5);
+    box-shadow: 2px -5px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    place-content: center;
+}
+
+section{
+    background-color: #638a77;
+    border: 2px solid black;
+}
+
+h1{
+    padding-bottom: 15px;
+}
+
+h1, p, h2{
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'Reggae One', cursive;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 5px 0 15px 0;
+    width: 60%;
+    box-shadow: 3px -5px 2px 1px rgba(0, 0, 0, .2);
+}
+
+footer{
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px){
+    .cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .cards{
+        display: block;
+    }
+
+    section{
+        padding: 5px;
+    }
+}

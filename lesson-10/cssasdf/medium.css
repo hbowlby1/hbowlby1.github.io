@@ -1,0 +1,203 @@
+@media screen and (max-width: 1057px) {
+    
+    
+    /* header elements */
+    
+
+    .headerContainer h1 {
+        display: block;
+        font-size: 28px;
+        float: right;
+
+    }
+
+    .headerAndMotto{
+        margin-top: 50px;
+        float: none;
+        margin-left: 50px;
+    }
+
+
+    .headerContainer img {
+        margin: -20px;
+        width: 100px;
+    }
+
+    /* .pancake{
+        margin-bottom: -35px;
+    } */
+
+    /* navbar settings */
+
+    .navbar ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #nav-ul.show {
+        display: block;
+        /* width: 75%; */
+        margin: 5px auto;
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* main */
+
+    .container{
+        width: 60%;
+    }
+
+    /* summary */
+
+    .herodiv{
+        display: block;
+    }
+
+    .herodiv img{
+        height: 15em;
+    }
+
+    #summaryMobile {
+        display: block;
+        position: static;
+        width: 95%;
+        margin: auto;
+
+    }
+
+    /* five day forecast */
+
+    .forecast{
+        margin-top: 10px /*!important*/;
+        width: 90%;
+    }
+
+    .forecast div{
+        width: 100%;
+    }
+
+    .forecastimg{
+        width: 50%;
+    }
+
+    .forecast p{
+        font-size: 16px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .forecast div p:nth-of-type(2){
+        border-top: 3px solid black;
+
+    }
+
+    @media screen and (max-width: 670px){
+        .forecast{
+            display: none;
+        }
+    }
+
+    /* article */
+
+    .anArticle img{
+        width: 75%;
+        float: none;
+    }
+
+    /* contact card */
+
+    .contactContainer{
+        display: block;
+    }
+
+    .map{
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+        width: 75%;
+    }
+
+    .contactContents{
+        text-align: center;
+    }
+
+    /* footer */
+
+    footer p {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+
+    /* gallery section */
+
+    h1{
+        text-align: center;
+    }
+
+    .containerGallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-content: center;
+    }
+
+    
+    .containerGallery img{
+        width: 75%;
+        margin-left: 20%;
+
+    }
+
+    .containerGallery p{
+        display: none;
+    }
+    
+
+    /* storm page */
+
+    form input.submit{
+        margin: 0 0 2rem 2%;
+    }
+
+    /* home page */
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 33%);
+    }
+
+    .cards section:nth-child(2) div{
+        float: right;
+        margin-right: 5%;
+    }
+
+    .cards section:nth-child(2) img{
+        float: left;
+        margin-left: 5%;
+    }
+
+    .cards section div{
+        float: left;
+        width: 40%;
+        margin-top: 5%;
+        margin-left: 20px;
+    }
+
+
+    .cards img{
+        float: right;
+        width: 40%;
+        height: 70%;
+        margin-top: 5%;
+        margin-right: 3%;
+        margin-left: 10%;
+    }
+}

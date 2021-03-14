@@ -1,0 +1,65 @@
+@media screen and (max-width: 700px){
+
+    h1{
+        text-align: center;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    /* Your infomration section */
+
+    /* gallery css */
+    .containerGallery{
+        display: block;
+    }
+
+    .containerGallery img{
+        margin-left: 13%;
+    }
+
+
+    /* storm center */
+
+    form input.submit{
+
+        margin: 0 0 2rem 10%;
+
+    }
+
+    /* homepage */
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 33%);
+        margin: 10px;
+    }
+
+    .cards img{
+        margin-top: 2%;
+        margin-left: 16%;
+        float: none;
+        width: 70%;
+        height: 40%;
+    }
+
+    .cards section div{
+        margin: 0 auto;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .cards section:nth-child(2) div{
+        float: none;
+        margin-right:0;
+    }
+
+    .cards section:nth-child(2) img{
+        float: none;
+        margin-left: 16%;
+    }
+}
