@@ -437,6 +437,10 @@ h1{
     order: -1;
 }
 
+.cards section:nth-child(3){
+    order: -1;
+}
+
 .cards img{
     width: 70%;
     margin-left: 15%;

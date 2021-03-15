@@ -62,4 +62,8 @@
         float: none;
         margin-left: 16%;
     }
+
+    .cards section:nth-child(3) img{
+        margin-left: 16%;
+    }
 }
