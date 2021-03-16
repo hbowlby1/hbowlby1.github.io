@@ -22,7 +22,7 @@ fetch(requestURL)
         p1.innerHTML = "Year Founded: " + towns[i].yearFounded; 
         p2.innerHTML = "Population: " + towns[i].currentPopulation;
         p3.innerHTML = "Average Rainfall: " + towns[i].averageRainfall;
-        image.setAttribute('src', "img/" + towns[i].photo);
+        image.setAttribute('src', "images/" + towns[i].photo);
         image.setAttribute('alt', "Photo of a building in fields in " + towns[i].name);
 
 
