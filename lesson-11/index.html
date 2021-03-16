@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Harrison Bowlby">
+    <meta name="description"
+        content="Beyond The Weather site for Harrison Bowlby in WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Beyond the Weather</title>
+</head>
+
+<body>
+    <div class="pancake">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header class="headerContainer">
+        <img src="../logo.png" alt="Logo for Beyond the Weather." id="logo">
+        <div class="headerAndMotto">
+            <h1>Beyond the Weather</h1>
+            <p>Look beyond the weather</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="hamburger" id="hamburger">
+            <i>&#x2630; Menu</i>
+        </button>
+        <ul class="navigation" id="nav-ul">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="cards"></div>
+
+    </main>
+
+    <footer>
+        <div class="hfBackground">
+            <p><span class="getDate"></span> | Harrison Bowlby | Arizona | <a href="https://www.byui.edu/online"
+                    target="_blank">BYUI Online
+                    Learning| </a> <a href="wireframes.html">WireFrames</a></p>
+            <div id="theDate"></div>
+        </div>
+    </footer>
+
+    <script src="js/getDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/webfont.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/changeSeverity.js"></script>
+    <script src="js/jsonReader.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+/* entire document */
+
+html{
+    background-color: #037171;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    padding: 5px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header content */
+
+.headerContainer{
+    background-color: #00B9AE;
+    height: 150px;
+}
+
+.headerAndMotto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.headerAndMotto h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.headerAndMotto p{
+    text-align: center;
+    margin: 0;
+}
+.headerContainer img{
+    width: 150px;
+    height: 150px;
+    margin-top: -25px;
+}
+
+/* pancake notifier */
+
+.pancake{
+    display: none;
+    margin: 0 auto;
+}
+
+.pancake p{
+    text-align: center;
+}
+
+/* navigation content */
+
+.navbar{
+    background-color: #037171;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    /* margin-top: -30px; */
+}
+
+.navbar ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.navbar li{
+    padding: 40px;
+    list-style: none;
+    align-self: center;
+    padding: 15px;
+    border: 5px solid #009f93;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar li:hover{
+    background-color: #00B9AE;
+    cursor: pointer;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.active{
+    background-color: #00B9AE;
+}
+
+.active a{
+    color: black;
+}
+
+/* body */
+
+.container{
+    background-color: #009f93;
+    margin: 0 auto;
+    width: 75%;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.center p{
+    padding: 5px;
+}
+
+/* hero div */
+
+.herodiv{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.herodiv h2{
+    text-align: center;
+}
+
+.herodiv img{
+    position: relative;
+    width: 100%;
+    height: 25em;
+    
+}
+
+.summary{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 25%;
+    top: 26em;
+    left: 25%;
+    padding: 5px;
+    color: white;
+}
+
+.summary h3{
+    text-align: center;
+}
+
+/* five day forecast */
+
+.forecast{
+    margin: 0 auto;
+    width: 75%;
+    padding: 10px;
+}
+
+.forecast ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.forecast div{
+    border: 3px solid black;
+    /* width: 70%; */
+    /* height: 100%; */
+}
+
+.forecastimg{
+    width: 100%;
+}
+
+.forecast p{
+    font-size: 16px;
+}
+
+.forecast div p:nth-of-type(1){
+    border-bottom: 3px solid black;
+}
+
+.forecast div p:nth-of-type(2){
+    border-top: 3px solid black;
+}
+
+/* The article */
+
+.articleContainer{
+    margin: 0 auto;
+    height: 100%;
+    width: 75%;
+    background-color:#037171;
+
+}
+
+.anArticle img{
+    float: right;
+    margin: 10px;
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+.anArticle h3{
+    color: white;
+}
+
+.anArticle p{
+    text-align: left;
+    max-height: 50%;
+    color: white;
+}
+
+/* contact information */
+
+.contactContainer{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-items: center;
+    /* grid-auto-flow: column; */
+    background-color:#00B9AE;
+    padding: 25px;
+}
+
+.contactContainer p{
+    grid-column: span 2;
+}
+
+.contactContainer p:nth-child(4){
+    padding-left: 0;
+}
+
+.contactContainer a{
+    grid-column: span 2;
+    color: black;
+    margin: 10px;
+    
+}
+
+
+.map{
+    grid-column: 1;
+    width: 50%;
+    height: 75%;
+    align-self: start;
+    float: none;
+
+}
+
+.socialIcons{
+    width: 32px;
+    height: 32px;
+}
+
+/* footer */
+
+footer{
+    margin: 10px auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color:#00B9AE;
+    text-align: center;
+    width: 75%;
+}
+
+footer a{
+    color: black;
+}
+
+/* weather api */
+
+.forecast ul li div{
+    width: 200%;
+}
+
+.forecast img{
+    width: 100%;
+    height: 100%
+}
