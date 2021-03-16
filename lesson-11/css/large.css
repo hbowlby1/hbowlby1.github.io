@@ -455,7 +455,7 @@ h1{
     transition: box-shadow .3s;
 }
 
-.containerGallery p{
+.containerGallery div{
     width: 72%;
     padding: 10px;
     border-radius: 3px;
