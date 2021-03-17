@@ -208,6 +208,9 @@ h3{
 /* The article */
 
 .articleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     margin: 0 auto;
     height: 100%;
     width: 75%;
@@ -217,10 +220,9 @@ h3{
 
 .anArticle img{
     float: right;
-    margin: 10px;
+    margin-left: 25px;
     border: 2px solid black;
-    height: 250px;
-    width: 250px;
+    width: 50%;
 }
 
 .anArticle h3{
@@ -228,8 +230,8 @@ h3{
 }
 
 .anArticle p{
+    display: inline;
     text-align: left;
-    max-height: 50%;
     color: white;
 }
 
@@ -428,6 +430,30 @@ form label.top input:required:valid{
     margin: 10px auto;
     /* border: 2px solid #037171; */
     width: 70%;
+}
+
+
+/* events section */
+
+.eventArea{
+    background-color: #037171;
+    padding: 10px;
+    margin: 15px auto;
+    width: 74%;
+}
+
+.eventArea ul{
+    list-style: none;
+}
+
+.eventArea ul li{
+    color: white;
+    padding: 5px;
+}
+
+.eventArea ul li:nth-child(odd){
+    background-color: #009f93;
+    color: black;
 }
 
 @media screen and (min-width: 1058px){

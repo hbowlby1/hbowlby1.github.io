@@ -58,9 +58,9 @@
                         <p>Currently: <span id="current-temp"></span></p>
                         <p>High: <span id="high-temp"></span></p>
                         <p>Low: <span id="low-temp"></span></p>
-                        <p>Wind Chill: <span id = "windChill"></span></p>
+                        <p>Wind Chill: <span id="windChill"></span></p>
                         <p>Humidity: <span id="humidity"></span></p>
-                        <p>Wind Speed: <span id = "windSpeed"></span> mph</p>
+                        <p>Wind Speed: <span id="windSpeed"></span> mph</p>
                     </div>
                 </section>
             </section>
@@ -78,21 +78,21 @@
                 <li>
                     <div>
                         <p class="fHeader"></p>
-                        <img class="forecastimg fImg"  alt="" src="#">
+                        <img class="forecastimg fImg" alt="" src="#">
                         <p class="fTemp"></p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <p class="fHeader"></p>
-                        <img class="forecastimg fImg"  src="#" alt="">
+                        <img class="forecastimg fImg" src="#" alt="">
                         <p class="fTemp"></p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <p class="fHeader"></p>
-                        <img class="forecastimg fImg"  alt="" src="#">
+                        <img class="forecastimg fImg" alt="" src="#">
                         <p class="fTemp"></p>
                     </div>
                 </li>
@@ -132,6 +132,18 @@
             </article>
 
         </div>
+
+        <section class="center eventArea anArticle">
+            <div>
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li id="event1"></li>
+                    <li id="event2"></li>
+                    <li id="event3"></li>
+                </ul>
+            </div>
+        </section>
+
         <section class="contactContainer">
             <img src="images/map.jpg" alt="Image of a map." class="map">
             <div class="contactContents">
@@ -150,8 +162,9 @@
 
     <footer>
         <div class="hfBackground">
-            <p><span class="getDate"></span> | Harrison Bowlby | Arizona | <a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <a href="https://www.byui.edu/online"
-                    target="_blank">BYUI Online
+            <p><span class="getDate"></span> | Harrison Bowlby | Arizona | <a href="https://openweathermap.org//"
+                    target="_blank">OpenWeather.org</a> | <a href="https://www.byui.edu/online" target="_blank">BYUI
+                    Online
                     Learning</a></p>
             <div id="theDate"></div>
         </div>
@@ -162,6 +175,7 @@
     <script src="js/getWeather.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
+    <script src="js/jsonReaderPreston.js"></script>
 </body>
 
 </html>
