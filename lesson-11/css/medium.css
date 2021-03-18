@@ -106,8 +106,18 @@
     /* article */
 
     .anArticle img{
-        width: 75%;
+        display: block;
         float: none;
+        clear: left;
+        width: 90%;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        overflow: auto;
+    }
+
+    .anArticle p{
+        margin-top: 5%;
+        display: block;
     }
 
     /* contact card */
