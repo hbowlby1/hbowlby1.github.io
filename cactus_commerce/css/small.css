@@ -235,3 +235,36 @@ footer{
     margin: 10px auto;
     padding: 10px;
 }
+
+
+/* city page */
+/* city img header */
+
+.cityImgHeader{
+    width: 90%;
+    margin: 0 auto;
+    background-color:#FFF3B0;
+}
+
+.cityImgHeader img{
+    padding: 10px;
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.cityImgHeader h2,h3{
+    text-align: center;
+}
+
+.demographic{
+    text-align: center;
+}
+
+.cityImgHeader p{
+    padding: 10px;
+}
+
+.cityImgHeader hr{
+    margin: 0;
+}
