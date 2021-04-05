@@ -1,0 +1,237 @@
+/* entire document */
+
+html{
+    background-color: #E09F3E;
+}
+
+.active{
+    background-color: #335C67 !important;
+}
+
+p,a{
+    font-family: "Merriweather", sans-serif;
+    font-size: 18px;
+}
+
+p{
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Helvetica, serif;
+}
+
+/* Home Page */
+/* header */
+.headerContainer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color:#FFF3B0;
+    border: 2px solid #9e2a2b;
+}
+#logo{
+    width: 50%;
+    height: 30%;
+}
+.headerContainer h1{
+    width: 50%;
+    text-align: center;
+}
+
+/* navbar */
+
+#hamburger{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 32px;
+}
+
+#nav-ul {
+    display: none;
+}
+
+#nav-ul.show {
+    display: block;
+    /* width: 75%; */
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.navLinks a,ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navLinks a{
+    color: black;
+}
+
+.navLinks li{
+    padding: 20px;
+    background-color: #FFF3B0;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+/* weather portion */
+#weather-forecast{
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+
+}
+
+#weather-forecast div{
+    font-family: "Merriweather", sans-serif;
+    margin: 5px auto;
+}
+
+#weather-forecast img{
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px #540B0E;
+}
+
+.weather-card, .weather-current-div{
+    border: 2px solid #9e2a2b;
+    padding: 5px;
+    margin: 10px auto;
+    background-color:#FFF3B0;
+}
+
+/* home image section */
+.homeImg{
+    background-color: #FFF3B0;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.homeImg img{
+    width: 80%;
+    padding: 10px;
+    margin-left: 7%;
+    border: 2px solid #9e2a2b;
+    box-shadow: 10px 5px 5px #540B0E;
+}
+
+/* company sections */
+.companies{
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.companies div{
+    background-color:#FFF3B0;
+}
+.companies p{
+    text-align: left;
+    padding: 15px;
+}
+
+.companies img{
+    display: block;
+    margin: 15px auto;
+    border: 2px solid #9e2a2b;
+    box-shadow: 10px 5px 5px #540B0E;
+}
+
+.companies a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* purpose */
+
+.purpose{
+    margin: 0 auto;
+    width: 90%;
+    background-color:#FFF3B0;
+    padding: 10px;
+}
+
+.purpose h2{
+    text-align: center;
+}
+
+/* join section */
+
+.join{
+    background-color:#FFF3B0;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.join h2{
+    text-align:center;
+}
+
+.join a.button{
+    display:inline-block;
+    padding:0.7em 1.7em;
+    margin-left: 30%;
+    border-radius:0.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Merriweather',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#3369ff;
+    box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    text-align:center;
+    position:relative;
+
+}
+    a.button:active{
+    box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+}
+
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    }
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+/* https://fdossena.com/?p=html5cool/buttons/i.frag */
+
+/* home screen events */
+
+.homeEvents{
+    background-color:#FFF3B0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.homeEvents h2{
+    text-align: center;
+}
+
+.homeEvents a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color:#FFF3B0;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
