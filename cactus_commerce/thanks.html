@@ -4,6 +4,7 @@
 <head>
     <title>Cactus Commerce</title>
     <meta charset="UTF-8">
+    <meta http-equiv="Refresh" content="10; url='index.html'" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/small.css" rel="stylesheet">
@@ -13,12 +14,6 @@
 
 <body>
     <header>
-        <div id="weather-alert-div">
-            <div id="alert-message">
-            </div>
-            <button class="x-out"
-                onclick="closeAlert('weather-alert-div', 'main-body', 1000)"><strong>X</strong></button>
-        </div>
         <div class="headerContainer">
             <img id="logo" src="img/logo.png" alt="Logo for Cactus Commerce">
             <h1>Cactus Commerce</h1>
@@ -48,8 +43,11 @@
         </ul>
     </nav>
 
-    <main>
-        <p>insert an automatic redirector to homepage</p>
+    <main class="thanksPage">
+        <p>Thank you for signing up. We will contact you shortly. Please wait 10 seconds to be redirected to the
+            homepage.</p>
+        <p>Or feel free to click this button to go to the homepage, if not redirected automatically.</p>
+        <a href="index.html"><button type="button">Home Page</button></a>
     </main>
     <footer>
         <iframe

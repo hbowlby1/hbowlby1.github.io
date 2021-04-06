@@ -270,4 +270,81 @@ footer{
 }
 
 /* join page */
+.benefits h1{
+    padding: 20px;
+}
 
+.benefits fieldset{
+    padding: 10px;
+    margin: 10px;
+}
+
+.benefits label{
+    margin-left: 35%;
+}
+
+.benefits input{
+    display: block;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 4px;
+    width: 70%
+}
+
+.benefits textarea{
+    margin-left: 10%;
+}
+
+.benefits .top input:required{
+    border-left: red solid 6px;
+    padding-left: 0;
+}
+
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+
+.packages div{
+    border: 2px solid #9e2a2b;
+    padding: 10px;
+    margin: 10px;
+}
+
+.packages p,li{
+    text-align: center;
+    margin-right: 15px;
+}
+
+form button{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    background-color: #FFF3B0;
+    color: black;
+}
+
+form button:active{
+    background-color:#3369ff;
+    color: white;
+}
+
+/* thanks page */
+.thanksPage p{
+    background-color:#FFF3B0;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.thanksPage button{
+    margin-left: 12%;
+    height: 50px;
+    width: 300px;
+}
+
+.thanksPage button:active{
+    background-color:#3369ff;
+    color: white;
+}
