@@ -49,7 +49,84 @@
     </nav>
 
     <main>
+        <section>
+            <h1>Join Us For More Benefits</h1>
+            <form method="GET" action="thanks.html" class="joinPage">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="first_name">First Name: <input type="text" name=first_name" pattern="[A-Z a-z-.]{5,}"
+                            required></label>
+                    <label for="last_name">Last Name: <input type="text" name=last_name" pattern="[A-Z a-z-.]{5,}"
+                            required></label>
+                    <label for="title">Title: <input type="text" name="title" pattern="[A-Z a-z-.]{2,}"></label>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email">Email:<input type="email" id="email" required></label>
+                    <label for="phone">Mobile:<input type="tel" id="phone" name="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label for="business_name">Business Name: <input type="text" name=business_name" required></label>
+                    <label for="address">Business Address: <input type="text" name="address"></label>
+                    <label for="website">Business Website:</label>
+                    <input type="url" id="website" name="website">
+                    <label for="description">About Your Business:</label>
+                    <textarea id="description" name="description" rows="5" cols="33"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Package Plan</legend>
+                    <p>Select Your Package Plan</p>
+
+                    <div>
+                        <input type="radio" id="non-profit" name="package" value="NP">
+                        <label for="huey">Non-Profit (&dollar;100)</label>
+                        <p>Perks</p>
+                        <ul>
+                            <li>Directory listings</li>
+                            <li>Social Media Posts</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="Bronze" name="package" value="Brz">
+                        <label for="dewey">Bronze (&dollar;200)</label>
+                        <p>Perks</p>
+                        <ul>
+                            <li>Everything in Non-Profit</li>
+                            <li>Weekly Promotions</li>
+                            <li>discounts from partner companies</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="Silver" name="package" value="Slv">
+                        <label for="dewey">Silver (&dollar;400)</label>
+                        <p>Perks</p>
+                        <ul>
+                            <li>Everything in Bronze</li>
+                            <li>Luncheons</li>
+                            <li>Client listings</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="Gold" name="package" value="Gold" checked>
+                        <label for="louie">Gold (&dollar;1000)</label>
+                        <p>Perks</p>
+                        <ul>
+                            <li>Everything in Silver</li>
+                            <li>Sponsorships</li>
+                            <li>commercial advertising</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
         <iframe
