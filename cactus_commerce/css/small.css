@@ -22,6 +22,24 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Home Page */
+
+/* alerts */
+
+
+.alert i{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.alert{
+    font-size: 18px;
+    background-color:#FFF3B0;
+    text-align: center;
+}
+
+
 /* header */
 .headerContainer{
     display: flex;
@@ -236,6 +254,9 @@ footer{
     padding: 10px;
 }
 
+.footerHeader{
+    text-align: left;
+}
 
 /* city page */
 /* city img header */
@@ -251,6 +272,8 @@ footer{
     margin-left: 10px;
     width: 90%;
     height: 90%;
+    border: 2px solid #9e2a2b;
+    box-shadow: 10px 5px 5px #540B0E;
 }
 
 .cityImgHeader h2,h3{
@@ -351,6 +374,10 @@ form button:active{
 
 /* directory page */
 
+.viewChanger{
+    display: none;
+}
+
 .cards{
     display: block;
     width: 90%;
@@ -382,4 +409,34 @@ form button:active{
 .cards p{
     padding: 10px;
     margin: 3px auto;
+}
+
+/* contact page */
+.contact section{
+    width: 90%;
+    background-color: #FFF3B0;
+    margin: 0 auto;
+}
+
+.contact div{
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.email label{
+    text-align: center;
+}
+
+.email p{
+    margin: 0;
+}
+
+.email input, textarea{
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.email input[type="submit"]{
+    margin-left: 20px;
 }

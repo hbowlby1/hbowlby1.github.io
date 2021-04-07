@@ -1,0 +1,147 @@
+@media screen and (Min-width: 1024px) {
+    /* Entire document */
+
+    p {
+        font-size: 16px;
+    }
+
+    /* header */
+
+    .headerContainer {
+        display: block;
+        max-width: 30%;
+        max-height: 10%;
+        margin: 10px auto;
+
+    }
+
+    #logo {
+        max-width: 100%;
+        margin-left: 25%;
+    }
+
+    .headerContainer h1 {
+        width: 100%;
+    }
+
+    /* navbar */
+
+    #hamburger {
+        display: none;
+    }
+
+    #nav-ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* weather portion */
+    .weather-large {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .weather-current-div {
+        margin: 15px auto;
+        width: max-content;
+    }
+
+    .weather-card-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+        max-width: none;
+        margin-left: 5vw;
+    }
+
+    /* homepage */
+
+    .homeImg img{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .companies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .join a.button {
+        margin-left: 42%;
+    }
+
+    /* city page */
+
+    .largeView {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-content: center;
+    }
+
+    .first {
+        display: inline;
+        grid-column: 1/ span 3;
+        grid-row: 1;
+    }
+
+    .first img{
+        height: 30%;
+    }
+
+    .second {
+        grid-column: 1;
+    }
+
+    .third {
+        grid-column: 2;
+    }
+
+    .fourth {
+        grid-column: 3;
+    }
+
+    /* join page */
+
+    .benefits h1{
+        text-align: center;
+    }
+
+    .benefits label{
+        margin-left: 45%;
+    }
+
+    .perks{
+        margin-left: 25%;
+    }
+
+    .packages{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    /* directory */
+    .cards{
+        text-align: center;
+        width: 50%;
+    }
+
+    .cards img{
+        width: 70%;
+        height: 30%;
+    }
+    .cards a{
+        display: block;
+    }
+
+    /* contact page */
+
+    .contact{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

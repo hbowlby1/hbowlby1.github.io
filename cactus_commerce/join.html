@@ -42,7 +42,7 @@
             <a href="directory.html">
                 <li>Directory</li>
             </a>
-            <a href="join.html">
+            <a href="contact.html">
                 <li>contact</li>
             </a>
         </ul>
@@ -55,81 +55,87 @@
                 <fieldset>
                     <legend>Your Information</legend>
                     <label for="first_name" class="top">First Name: <input type="text" name=first_name"
-                            pattern="[A-Z a-z-.]{2,}" required></label>
+                            pattern="[A-Z a-z-.]{2,}" placeholder="John" required></label>
                     <label for="last_name" class="top">Last Name: <input type="text" name=last_name"
-                            pattern="[A-Z a-z-.]{2,}" required></label>
-                    <label for="title">Title: <input type="text" name="title" pattern="[A-Z a-z-.]{2,}"></label>
+                            pattern="[A-Z a-z-.]{2,}" placeholder="Doe" required></label>
+                    <label for="title">Title: <input type="text" name="title" pattern="[A-Z a-z-.]{2,}"
+                            placeholder="Mr."></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label for="email" class="top">Email:<input type="email" id="email" required></label>
-                    <label for="phone">Mobile:<input type="tel" id="phone" name="phone"></label>
+                    <label for="email" class="top">Email:<input type="email" id="email" placeholder="johndoe@gmail.com"
+                            required></label>
+                    <label for="phone">Mobile:<input type="tel" id="phone" name="phone"
+                            placeholder="602-555-4545"></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Business Information</legend>
                     <label for="business_name" class="top">Business Name: <input type="text" name=business_name"
-                            required></label>
-                    <label for="address">Business Address: <input type="text" name="address"></label>
+                            placeholder="John Doe Inc." required></label>
+                    <label for="address">Business Address: <input type="text" name="address"
+                            placeholder="123 main st."></label>
                     <label for="website">Business Website:</label>
-                    <input type="url" id="website" name="website">
+                    <input type="url" id="website" name="website" placeholder="www.johndoeinc.com">
                     <label for="description">About Your Business:</label>
                     <textarea id="description" name="description" rows="5" cols="33"></textarea>
                 </fieldset>
 
-                <fieldset class="packages">
-                    <legend>Package Plan</legend>
-                    <p>Select Your Package Plan</p>
+                <div class="perks">
+                    <fieldset class="packages">
+                        <legend>Package Plan</legend>
+                        <p>Select Your Package Plan</p>
 
-                    <div>
-                        <label for="non-profit">Non-Profit (&dollar;100)<input type="radio" id="non-profit"
-                                name="package" value="NP">
-                            <p>Perks</p>
-                            <ul>
-                                <li>Directory listings</li>
-                                <li>Social Media Posts</li>
-                            </ul>
-                        </label>
-                    </div>
+                        <div>
+                            <label for="non-profit">Non-Profit (&dollar;100)<input type="radio" id="non-profit"
+                                    name="package" value="NP">
+                                <p>Perks</p>
+                                <ul>
+                                    <li>Directory listings</li>
+                                    <li>Social Media Posts</li>
+                                </ul>
+                            </label>
+                        </div>
 
-                    <div>
-                        <label for="Bronze">Bronze (&dollar;200)<input type="radio" id="Bronze" name="package"
-                                value="Brz">
-                            <p>Perks</p>
-                            <ul>
-                                <li>Everything in Non-Profit</li>
-                                <li>Weekly Promotions</li>
-                                <li>discounts from partner companies</li>
-                            </ul>
-                        </label>
-                    </div>
+                        <div>
+                            <label for="Bronze">Bronze (&dollar;200)<input type="radio" id="Bronze" name="package"
+                                    value="Brz">
+                                <p>Perks</p>
+                                <ul>
+                                    <li>Everything in Non-Profit</li>
+                                    <li>Weekly Promotions</li>
+                                    <li>discounts from partner companies</li>
+                                </ul>
+                            </label>
+                        </div>
 
-                    <div>
-                        <label for="Silver">Silver (&dollar;400)<input type="radio" id="Silver" name="package"
-                                value="Slv">
-                        <p>Perks</p>
-                        <ul>
-                            <li>Everything in Bronze</li>
-                            <li>Luncheons</li>
-                            <li>Client listings</li>
-                        </ul>
-                    </label>
-                    </div>
+                        <div>
+                            <label for="Silver">Silver (&dollar;400)<input type="radio" id="Silver" name="package"
+                                    value="Slv">
+                                <p>Perks</p>
+                                <ul>
+                                    <li>Everything in Bronze</li>
+                                    <li>Luncheons</li>
+                                    <li>Client listings</li>
+                                </ul>
+                            </label>
+                        </div>
 
-                    <div>
-                        <label for="Gold">Gold (&dollar;1000)<input type="radio" id="Gold" name="package" value="Gold"
-                                checked>
+                        <div>
+                            <label for="Gold">Gold (&dollar;1000)<input type="radio" id="Gold" name="package"
+                                    value="Gold" checked>
 
-                        <p>Perks</p>
-                        <ul>
-                            <li>Everything in Silver</li>
-                            <li>Sponsorships</li>
-                            <li>commercial advertising</li>
-                        </ul>
-                    </label>
-                    </div>
-                </fieldset>
+                                <p>Perks</p>
+                                <ul>
+                                    <li>Everything in Silver</li>
+                                    <li>Sponsorships</li>
+                                    <li>commercial advertising</li>
+                                </ul>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
                 <button type="submit">Join Now</button>
             </form>
         </section>
@@ -139,7 +145,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106593.8896095362!2d-111.80779832549678!3d33.395623599988895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba7c2c0c592c1%3A0xd10fc215694e771b!2sMesa%2C%20AZ!5e0!3m2!1sen!2sus!4v1617648038770!5m2!1sen!2sus"
             width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div>
-            <h3>Contact Information:</h3>
+            <h3 class="footerHeader">Contact Information:</h3>
             <a href="notarealemail@gmail.com">cactuscommerce@mail.com</a>
             <p>602-555-4545</p>
             <p>123 Main St.</p>

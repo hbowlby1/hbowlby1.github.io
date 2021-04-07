@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+    /* home page */
+
+    .companies img{
+        width: 40%;
+    }
+
+    .join a.button{
+        margin-left: 39%;
+    }
+
+    /* city page */
+
+    .cityImgHeader img{
+        width: 60%;
+        height: 60%;
+        margin-left: 22%;
+    }
+
+    /* join page */
+
+    .benefits textarea{
+        margin-left: 2%;
+    }
+
+    /* directory page */
+
+    .viewChanger{
+        display: block;
+        text-align: center;
+    }
+    /* grid view */
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footerHeader{
+        text-align: left;
+    }
+    
+    .mesaMap{
+        display: inline;
+        grid-column: 1;
+    }
+
+    footer .contactFooter{
+        grid-column: 2;
+    }
+
+}
