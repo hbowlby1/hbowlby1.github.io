@@ -370,7 +370,7 @@ form button:active{
     padding: 10px;
 }
 
-.thanksPage button{
+.thanksPage a{
     margin-left: 12%;
     height: 50px;
     width: 300px;
