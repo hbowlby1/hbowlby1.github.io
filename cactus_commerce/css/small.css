@@ -6,6 +6,7 @@ html{
 
 .active{
     background-color: #335C67 !important;
+    color: white;
 }
 
 p,a{
