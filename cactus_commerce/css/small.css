@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{
     color: black;
 }
 
-.navLinks li{
+.navLinks p{
     padding: 20px;
     background-color: #FFF3B0;
     border: 2px solid black;
