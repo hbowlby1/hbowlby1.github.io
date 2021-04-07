@@ -335,9 +335,15 @@ form label.top input:required:valid{
     margin: 10px;
 }
 
-.packages p,li{
-    text-align: center;
-    margin-right: 15px;
+.packages label{
+    font-family: "Merriweather", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.perkInfo{
+    margin-left: 38%;;
 }
 
 form button{
@@ -354,6 +360,7 @@ form button:active{
     background-color:#3369ff;
     color: white;
 }
+
 
 /* thanks page */
 .thanksPage p{
