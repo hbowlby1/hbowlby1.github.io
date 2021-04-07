@@ -342,9 +342,6 @@ form label.top input:required:valid{
     margin: 10px;
 }
 
-.perkInfo{
-    margin-left: 38%;;
-}
 
 form button{
     display: block;
