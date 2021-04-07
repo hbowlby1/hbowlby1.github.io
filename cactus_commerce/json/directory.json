@@ -36,7 +36,7 @@
             "name" : "Jungle Nursery",
             "website" : "N/A",
             "address" : "1550 E Dana Ave, Mesa, AZ 85204",
-            "logo" : "../img/placeholder.jpg",
+            "logo" : "placeholder.jpg",
             "phone" : "480-396-8800",
             "email" : "N/A"
         },
@@ -52,7 +52,7 @@
             "name" : "AP Nursery",
             "website" : "N/A",
             "address" : "41 S 83rd Pl, Mesa, AZ 85208",
-            "logo" : "../img/placeholder.jpg",
+            "logo" : "placeholder.jpg",
             "phone" : "(480) 390-2005",
             "email" : "N/A"
         }
