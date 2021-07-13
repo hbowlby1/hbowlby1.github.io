@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Permanent+Marker&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  padding: 25px;
+  background-color: #ece3dc;
+  text-align: center;
+  border: solid 2px #2ea7be;
+}
+
+header h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 55px;
+  color: #0176b1;
+  margin: 25px;
+  font-weight: lighter;
+}
+
+header h2 {
+  font-family: "Permanent Marker", cursive;
+  color: #2ea7be;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.summary,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  font-family: "Open Sans", sans-serif;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 10px 5px 5px gray;
+  text-align: center;
+  border: 2px solid #2ea7be;
+}
+
+.preamble {
+  font-family: "Open Sans", sans-serif;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 10px 5px 5px gray;
+  text-align: center;
+  border: 2px solid #2ea7be;
+}
+
+h3 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: lighter;
+  font-size: 25px;
+  color: #0176b1;
+}
+
+header h2 {
+  font-family: "Permanent Marker", cursive;
+  color: #2EA7BE;
+  font-style: oblique;
+  font-weight: lighter;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #2EA7BE, #fff, #0176B1);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+h1,
+h2 {
+  animation-duration: 0.9s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+h1 {
+  text-shadow: 20px 10px 10px #909090;
+}
+
+a {
+  color: #2ea7be;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #82c6a3;
+  font-size: 18px;
+  transition: font-size 0.5s;
+}
+
+.sidebar {
+  background-color: #ece3dc;
+}
+
+.wrapper {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
+.wrapper h3 {
+  text-align: center;
+}
+
+.design-name,
+.designer-name,
+.design-archives a,
+.zen-resources a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #2ea7be;
+}
+
+.navigation a,
+li {
+  font-family: "Open Sans", sans-serif;
+  list-style-type: none;
+  padding: 10px;
+  margin: 15px;
+  border: solid #2ea7be 2px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  text-align: center;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  border: 2px solid #2ea7be;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.participation p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.requirements p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.explanation p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.preamble p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  html {
+    background: url(imgs/backgroundPhoto.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 1920px;
+  }
+
+  body {
+    /*I added this*/
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(236, 227, 220, 0.5);
+    padding: 10px;
+  }
+
+  .page-wrapper {
+    display: inline;
+  }
+
+  .main {
+    float: right;
+    width: 60%;
+    padding: 20px;
+    background-color: #ece3dc;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+    border: 2px solid #2ea7be;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  }
+
+  .sidebar {
+    width: 30%;
+    height: 50%;
+  }
+
+  .navigation a, li :hover {
+    color: #82c6a3;
+    font-size: 22px;
+    transition: font-size 0.5s;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

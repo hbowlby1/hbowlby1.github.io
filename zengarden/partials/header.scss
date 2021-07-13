@@ -1,0 +1,98 @@
+@import "variables.scss";
+
+header {
+  padding: 25px;
+  background-color: $background;
+  text-align: center;
+  border: solid 2px $lightBlue;
+}
+header h1 {
+  font-family: $secondaryFont;
+  font-size: 55px;
+  color: $veryDarkBlue;
+  margin: 25px;
+  font-weight: lighter;
+}
+header h2 {
+  font-family: $secondaryFont;
+  color: $lightBlue;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 30px;
+}
+.summary,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  font-family: $primaryFont;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 10px 5px 5px gray;
+  text-align: center;
+  border: 2px solid $lightBlue;
+}
+.preamble {
+  font-family: $primaryFont;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 10px 5px 5px gray;
+  text-align: center;
+  border: 2px solid $lightBlue;
+}
+
+h3 {
+  font-family: $secondaryFont;
+  font-weight: lighter;
+  font-size: 25px;
+  color: $veryDarkBlue;
+}
+
+header h2 {
+  font-family: "Permanent Marker", cursive;
+  color: #2EA7BE;
+  font-style: oblique;
+  font-weight: lighter;  
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg,#2EA7BE, #fff, #0176B1);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+h1,
+h2 {
+  animation-duration: 0.9s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+h1{
+  text-shadow: 20px 10px 10px #909090;
+}

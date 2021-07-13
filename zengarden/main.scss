@@ -1,0 +1,310 @@
+//reset
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Permanent+Marker&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import "partials/variables.scss";
+
+//header code and body code, feel free to move this.
+@import "partials/header.scss";
+
+//links
+
+a{
+  color: $lightBlue;
+  text-decoration: none;
+}
+
+a:hover{
+    color: $lightGreen;
+    font-size: 18px;
+    transition: font-size .5s;
+}
+
+//aside section
+
+.sidebar {
+  background-color: $background;
+}
+
+.wrapper {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  h3 {
+    text-align: center;
+  }
+}
+
+@mixin no-line-links {
+  text-decoration: none;
+  font-size: 20px;
+  color: $lightBlue;
+}
+
+.design-name,
+.designer-name,
+.design-archives a,
+.zen-resources a {
+  @include no-line-links();
+}
+
+.navigation a,
+li {
+  font-family: $primaryFont;
+  list-style-type: none;
+  padding: 10px;
+  margin: 15px;
+  border: solid $lightBlue 2px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  text-align: center;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  border: 2px solid $lightBlue;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.participation p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.requirements p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.explanation p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.preamble p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+
+
+//beginning of large screen
+@media screen and (min-width: 767px) {
+  //body
+
+  html {
+    background: url(imgs/backgroundPhoto.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 1920px;
+  }
+
+  body {
+    /*I added this*/
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(236,227,220,0.5);
+    padding: 10px; 
+  }
+
+  .page-wrapper{
+    display: inline;
+  }
+
+
+  .main {
+    float: right;
+    width: 60%;
+    padding: 20px;
+    background-color: $background;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements,
+  footer {
+    border: 2px solid $lightBlue;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  }
+
+  .sidebar {
+    width: 30%;
+    height: 50%;
+  }
+
+  .navigation a, li :hover{
+    color: $lightGreen;
+    font-size: 22px;
+    transition: font-size .5s;
+  }
+
+  p{
+    line-height: 1.5;
+  }
+}
