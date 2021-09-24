@@ -18,7 +18,7 @@ for (i = 0; i <= links.length - 1; i++) {
     const a = document.createElement('a');
     const br = document.createElement('br');
     //adding the id addLink so I can loop through and add the a tags inside the li
-    a.setAttribute('href', 'links[i].url');
+    a.setAttribute('href', links[i].url);
     a.innerText = links[i].label;
 
     // const a = document.createElement('a')
