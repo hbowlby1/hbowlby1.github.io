@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Notes</title>
+</head>
+
+<body>
+    <h1>Week 3 Notes and Assignments</h1>
+    <hr>
+    <h3>Object Methods</h3>
+    <ul>
+        <li>A function that is a property of an object is a method.</li>
+        <li>You can use method shorthands for example:
+            <pre><code>// these objects do the same
+
+                user = {
+                  sayHi: function() {
+                    alert("Hello");
+                  }
+                };
+                
+                // method shorthand looks better, right?
+                user = {
+                  sayHi() { // same as "sayHi: function(){...}"
+                    alert("Hello");
+                  }
+                };</code></pre>
+        </li>
+        <li>"This" is a keyword that can be used to call the object. For example, this.name is accessing the user object and the name.</li>
+        <li>"This" is not bound and can be called outside of the object.</li>
+        <li>Arrow functions cannot use "This"</li>
+    </ul>
+
+    <hr>
+
+    <h3>This in JavaScript</h3>
+    <sub>I already understand this but read "this" for more clarification in JavaScript.</sub>
+    <ul>
+        <li>you can call "This" in 6 different ways.</li>
+        <ol>
+            <li>in global context</li>
+                <ul>
+                    <li></li>
+                </ul>
+            <li>in object construction</li>
+            <li>in an object method</li>
+            <li>in a simple function</li>
+            <li>in an arrow function</li>
+            <li>in an event listener</li>
+        </ol>
+    </ul>
+    <a href="../../index.html">Go to Home</a>
+</body>
+
+</html>
