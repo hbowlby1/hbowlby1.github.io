@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3 Notes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 Notes</title>
 </head>
 
 <body>
-    <h1>Week 3 Notes and Assignments</h1>
-    <hr>
-    <h3>Object Methods</h3>
-    <ul>
-        <li>A function that is a property of an object is a method.</li>
-        <li>You can use method shorthands for example:
-            <pre><code>// these objects do the same
+  <h1>Week 3 Notes and Assignments</h1>
+  <hr>
+  <h3>Object Methods</h3>
+  <ul>
+    <li>A function that is a property of an object is a method.</li>
+    <li>You can use method shorthands for example:
+      <pre><code>// these objects do the same
 
                 user = {
                   sayHi: function() {
@@ -29,31 +29,84 @@
                     alert("Hello");
                   }
                 };</code></pre>
-        </li>
-        <li>"This" is a keyword that can be used to call the object. For example, this.name is accessing the user object and the name.</li>
-        <li>"This" is not bound and can be called outside of the object.</li>
-        <li>Arrow functions cannot use "This"</li>
-    </ul>
+    </li>
+    <li>"This" is a keyword that can be used to call the object. For example, this.name is accessing the user object and
+      the name.</li>
+    <li>"This" is not bound and can be called outside of the object.</li>
+    <li>Arrow functions cannot use "This"</li>
+  </ul>
 
-    <hr>
+  <hr>
 
-    <h3>This in JavaScript</h3>
-    <sub>I already understand this but read "this" for more clarification in JavaScript.</sub>
-    <ul>
-        <li>you can call "This" in 6 different ways.</li>
-        <ol>
-            <li>in global context</li>
-                <ul>
-                    <li></li>
-                </ul>
-            <li>in object construction</li>
-            <li>in an object method</li>
-            <li>in a simple function</li>
-            <li>in an arrow function</li>
-            <li>in an event listener</li>
-        </ol>
-    </ul>
-    <a href="../../index.html">Go to Home</a>
+  <h3>This in JavaScript</h3>
+  <sub>I already understand this but read "this" for more clarification in JavaScript.</sub>
+  <ul>
+    <li>you can call "This" in 6 different ways.</li>
+    <ol>
+      <li>in global context</li>
+      <ul>
+        <li>you don't really use this version of "this". It calls the Window object.</li>
+      </ul>
+      <li>in object construction</li>
+      <ul>
+        <li>this is used with constructors.</li>
+      </ul>
+      <li>in an object method</li>
+      <ul>
+        <li>used to get the instances of an object</li>
+      </ul>
+      <li>in a simple function</li>
+      <ul>
+        <li>if you call this in a simple function it refers to the Window object.</li>
+        <li>to fix this use a variable to call "this" (usually you use self. Or use an arrow function.</li>
+      </ul>
+      <li>in an arrow function</li>
+      <ul>
+        <li>using a this in an arrow function calls the object instead of the Windows object.</li>
+      </ul>
+      <li>in an event listener</li>
+      <ul>
+        <li>this refers to the event listener item</li>
+        <li>you still need to provide a reference (variable)</li>
+        <li>to call the object instead of the event you need to use bind. For example
+          <code>this.listener = this.speakLeet.bind(this)</code></li>
+        <ul>
+          <li>bind is similiar to putting parameters in a function</li>
+          <li>it does not work with arrow functions</li>
+        </ul>
+      </ul>
+    </ol>
+  </ul>
+
+  <hr>
+  <h3>Chapter 5 JavaScript Novice to Ninja</h3>
+  <ul>
+    <li>object literal notation is the preferred way of creating objects.</li>
+    <li>use the ES6 since it is easier <code>const ironMan = {name, realname};</code></li>
+    <li>dot notatation (object.name) is the usual method but you can also use quotes. It's useful for chaining strings
+      (superman["real" + " " + "name"] real and name are properties and not strings)</li>
+    <li>make sure to add parenthesis after calling object methods. ( super.fly() )</li>
+    <li>You can loop through an objects methods by calling a for in loop <code>for(const key in superman) { do something }</code></li>
+    <li>you can add properties to an object by using this format <code>object.newProperty = propertyItem</code></li>
+    <li>objects are not ordered lists</li>
+    <li>you can update properties like this <code>super['real name'] = 'Kal-El'</code></li>
+    <li>you can delete properties by putting delete before calling the property i.e <code>delete superman.fly</code></li>
+    <li>you can nest objects and call them like <code>jla.batman.realName</code></li>
+      <ul>
+        <li>you can mix the notations ie <code>jla.batman['realName']</code></li>
+      </ul>
+    <li>JSON is a way of making objects and can be accessed outside of the JavaScript file. Think of weather API.</li>
+    <li>next section talks about the Math object but it's mainly review and in my opinion better to refer to then memorize.</li>
+    <li>same with Date object</li>
+    <li>RegExp can be used to search for items in a string. You can use it to find patterns</li>
+    <li>it's usually easier to create RegExp objects using this method <code>const pattern = new RegExp(language);</code></li>
+    <li>RegExp.test() can be used to test if the string passes. Usually used for password testing.</li>
+    <li>probably best to reference a reference sheet for RegExp</li>
+  </ul>
+
+  <hr>
+  <h3>Chapter 6 JavaScript Novice to Ninja</h3>
+  <a href="../../index.html">Go to Home</a>
 </body>
 
 </html>
