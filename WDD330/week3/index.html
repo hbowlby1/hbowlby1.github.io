@@ -69,7 +69,8 @@
         <li>this refers to the event listener item</li>
         <li>you still need to provide a reference (variable)</li>
         <li>to call the object instead of the event you need to use bind. For example
-          <code>this.listener = this.speakLeet.bind(this)</code></li>
+          <code>this.listener = this.speakLeet.bind(this)</code>
+        </li>
         <ul>
           <li>bind is similiar to putting parameters in a function</li>
           <li>it does not work with arrow functions</li>
@@ -86,26 +87,63 @@
     <li>dot notatation (object.name) is the usual method but you can also use quotes. It's useful for chaining strings
       (superman["real" + " " + "name"] real and name are properties and not strings)</li>
     <li>make sure to add parenthesis after calling object methods. ( super.fly() )</li>
-    <li>You can loop through an objects methods by calling a for in loop <code>for(const key in superman) { do something }</code></li>
+    <li>You can loop through an objects methods by calling a for in loop
+      <code>for(const key in superman) { do something }</code>
+    </li>
     <li>you can add properties to an object by using this format <code>object.newProperty = propertyItem</code></li>
     <li>objects are not ordered lists</li>
     <li>you can update properties like this <code>super['real name'] = 'Kal-El'</code></li>
-    <li>you can delete properties by putting delete before calling the property i.e <code>delete superman.fly</code></li>
+    <li>you can delete properties by putting delete before calling the property i.e <code>delete superman.fly</code>
+    </li>
     <li>you can nest objects and call them like <code>jla.batman.realName</code></li>
-      <ul>
-        <li>you can mix the notations ie <code>jla.batman['realName']</code></li>
-      </ul>
+    <ul>
+      <li>you can mix the notations ie <code>jla.batman['realName']</code></li>
+    </ul>
     <li>JSON is a way of making objects and can be accessed outside of the JavaScript file. Think of weather API.</li>
-    <li>next section talks about the Math object but it's mainly review and in my opinion better to refer to then memorize.</li>
+    <li>next section talks about the Math object but it's mainly review and in my opinion better to refer to then
+      memorize.</li>
     <li>same with Date object</li>
     <li>RegExp can be used to search for items in a string. You can use it to find patterns</li>
-    <li>it's usually easier to create RegExp objects using this method <code>const pattern = new RegExp(language);</code></li>
+    <li>it's usually easier to create RegExp objects using this method
+      <code>const pattern = new RegExp(language);</code>
+    </li>
     <li>RegExp.test() can be used to test if the string passes. Usually used for password testing.</li>
     <li>probably best to reference a reference sheet for RegExp</li>
   </ul>
 
   <hr>
   <h3>Chapter 6 JavaScript Novice to Ninja</h3>
+  <ul>
+    <li>While JavaScript is the main language for DOM manipulation, other languages can do it too.</li>
+    <li>Node lists are array-like objects but are not arrays.</li>
+    <ul>
+      <li>use <code>.from()</code> to turn it into an array for array methods.</li>
+    </ul>
+    <li><code>document.getElementById()</code> is the most common way of grabbing items in a document</li>
+    <li><code>document.getElementByTagName()</code> gets objects based on the tag.</li>
+    <li><code>document.getElementByClassName()</code> as it says, gets an object by the class name.</li>
+    <li><code>document.querySelector()</code>lets you use CSS notation for grabbing tags, id's or class. It's personally
+      my favorite method.</li>
+    <li>you can use <code>.textContent</code>to grab the text info in a tag</li>
+    <ul>
+      <li>it does not work in IE 8 so you can use <code>innerText</code></li>
+    </ul>
+    <li>you can use <code>.toggle()</code> to remove classes. It's useful for areas like dropdowns and color changing
+      from my experience.</li>
+    <li>every element has a style property so you can change items dynamically using CSS. example:
+      <code>superman.style.border = "red 2px solid";</code> just know it adds it via inline CSS.</li>
+    <li>if you use the style method any CSS properties seperated by a dash must instead be camel case. Example: background-color = backgroundColor</li>
+    <li>you can also use bracket notation <code>superman.style['background color']</code></li>
+    <li>most of this chapter was review.</li>
+  </ul>
+
+  <hr>
+  <h3>Chapter 7 JavaScript Novice to Ninja</h3>
+  <ul>
+    <li>This chapter is on event listeners</li>
+    <li>refer <a href="event.html">here </a>for examples</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">full list of events</a></li>
+  </ul>
   <a href="../../index.html">Go to Home</a>
 </body>
 
