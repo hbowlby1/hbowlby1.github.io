@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Notes</title>
+</head>
+
+<body>
+    <h1>Week 4 Notes</h1>
+    <hr>
+
+    <h3>Chapter 8: Forms</h3>
+    <ul>
+        <li><a href="search.html">forms example</a></li>
+        <li>do not make reset buttons because they are too easy to click and will wipe out data.</li>
+        <li><a href="hero.html">link for hero example</a></li>
+        <li>JavaScript should not be relied upon to validate data saved to a database.</li>
+        <li>JavaScript is mainly used for feedback on the frontend.</li>
+        <li>HTML5 has it's own validation API for form validation.</li>
+        <li>an example:
+            <code> input type='text' id='heroName' name='heroName' autofocus placeholder='Your Super Hero Name' maxlength=32 required</code>
+        </li>
+    </ul>
+
+    <hr>
+    <h3>Chapter 12: Object Oriented Programming</h3>
+    <ul>
+        <li>classes weren't introduced until ES6</li>
+        <li>much like in Java, you use <code>this</code> to make constructors</li>
+        <li>static methods are only callable by the parent class.</li>
+        <li>prototype can be used to add a new property after the class has been declared.</li>
+        <li>never use arrays or objects as a default value in prototype</li>
+        <li>use getters and setter for private variables.
+            <pre>
+                class Turtle {
+                    constructor(name,color) {
+                        this.name = name;
+                        let _color = color;
+                        this.setColor = color => { return _color = color; }
+                        this.getColor = () => _color;
+                    }
+                }
+            </pre>
+        </li>
+        <ul>
+            <li>you can get the color by calling <code>raph.getColor()</code> and to set the color you call
+                raph.setColor("red")</li>
+        </ul>
+        <li>you can use <code>extends</code> to make a sub class</li>
+        <li>you can use <code>get()</code> and <code>set()</code>for the getter and setters in a class.</li>
+        <ul>
+            <li>
+                <pre>
+                    class Dice {
+                        constructor(sides=6){    
+                            Object.defineProperty(this, 'sides', {
+                                get() {
+                                return `This dice has ${sides} sides`;
+                                },
+                                set(value) {
+                                if(value > 0) {
+                                    sides = value;
+                                    return sides;
+                                } else {
+                                    throw new Error('The number of sides must be positive');
+                                }
+                                }
+                            });
+                        
+                            this.roll = function() {
+                                return Math.floor(sides * Math.random() + 1)
+                            }
+                            }
+                        }
+                </pre>
+            </li>
+        </ul>
+        <li>if you have a function nested inside another fucntion you can use <code>that</code> to grab info from the
+            previous function. ex</li>
+        <ul>
+            <li>
+                <pre>
+                    superman.findFriends = function(){
+                        const that = this;
+                        this.friends.forEach(function(friend) {
+                            console.log(`${friend.name} is friends with ${that.name}`);
+                        }
+                        );
+                    }
+                    
+                    superman.findFriends();
+                    <<  Batman is friends with Superman
+                        Wonder Woman is friends with Superman
+                        Aquaman is friends with Superman
+                </pre>
+            </li>
+        </ul>
+    </ul>
+
+    <hr>
+    <h3>Chapter 15: Modern JavaScript</h3>
+    <p>Modular JavaScript Section</p>
+    <ul>
+        <li>modular JavaScript goes over how to import and export from different files. A good example is getting PI
+            from a file called PI.js.</li>
+    </ul>
+    <a href="../../index.html">Go to Home</a>
+</body>
+
+</html>

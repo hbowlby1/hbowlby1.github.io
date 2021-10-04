@@ -1,16 +1,20 @@
 //below is the array for the list
 const links = [
     {
-        label: "Week1 notes",
+        label: "Week 1 notes",
         url: "WDD330/week1/index.html"
     },
     {
-        label: "Week2 notes",
+        label: "Week 2 notes",
         url: "WDD330/week2/index.html"
     },
     {
-        label: "Week3 notes",
+        label: "Week 3 notes",
         url: "WDD330/week3/index.html"
+    },
+    {
+        label: "Week 4 notes",
+        url: "WDD330/week4/index.html"
     }
 ];
 
