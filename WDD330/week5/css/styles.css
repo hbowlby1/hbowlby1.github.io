@@ -1,0 +1,76 @@
+/* entire page */
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300;400&display=swap');
+
+html{
+    margin-top: -32px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'ABeeZee', sans-serif;
+
+}
+
+/* header top of page */
+
+h1 {
+    text-align: center;
+    background-color: #515f30;
+    color: #d3d0cf;
+    padding: 1em;
+    font-size: 3em;
+}
+
+/* headings in list */
+
+h2 {
+    text-align: center;
+    background-color: #1d637b;
+    padding: .7em;
+    color: #d3d0cf;
+}
+
+/* image */
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    width: 70%;
+    grid-column: 1;
+    margin-left: 50px;
+}
+
+.image{
+    width: 90%;
+}
+
+.funStuff {
+    grid-column: 2;
+}
+
