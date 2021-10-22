@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Challenge</title>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Todos</h1>
-    <div class="todoDisplay">
-        <!-- insert stuff here -->
-    </div>
 
-    <div class="todoInput">
-        <form action="#">
-            <input type="text" name="todoName" id="todoName">
-            <input type="submit" value="+">
-        </form>
+<body>
+    <div id="todoListBox">
+        <h1>TODOS</h1>
+        <ul id="todoBoard">
+            <!-- Todo list is here -->
+        </ul>
+        <div id="todoFooter">
+            <div><span id="todoCounter">0</span> tasks left</div>
+            <div id="todoAll" class="filter activeFilter">All</div>
+            <div id="todoActive" class="filter">Active</div>
+            <div id="todoCompleted">Completed</div>
+        </div>
+        <div id="newTodoForm">
+            <input type="text" name="newTodo" id="newTodo" />
+            <button input type="button" id="addButton">+</button>
+        </div>
     </div>
+    <script src="./js/todo.js" type="module"></script>
 </body>
+
 </html>
