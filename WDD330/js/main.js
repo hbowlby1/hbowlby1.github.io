@@ -25,8 +25,8 @@ const links = [
         url: "WDD330/week6/todo.html"
     },
     {
-        label: "Week 7 Notes",
-        url: "WDD330/week7/index.html"
+        label: "Week 8 Notes",
+        url: "WDD330/week8/index.html"
     }
 ];
 
