@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Notes</title>
+</head>
+
+<body>
+    <h1>Week 7 Notes</h1>
+    <hr>
+    <p>Most of the info from these chapters is review from WDD 331. I'll try to add new info if I find any but this page
+        may be barren</p>
+    <h2>Chapter 8: Transforms and Transitions</h2>
+    <ul>
+        <li>To get transform to work in older browsers make sure to include:</li>
+        <li>
+            <pre>-webkit-transform: translate(45px,-45px); /* iOS8, Android 
+            ↵4.4.3, BB10 */
+            -ms-transform: translate(45px,-45px); /* IE9 only */
+            transform: translate(45px,-45px);</pre>
+        </li>
+        <li>translate does not work with inline elements.</li>
+        <li>Translate is for moving items along the x and y axis</li>
+        <li>transforming is for scaling content to make it appear bigger or smaller.</li>
+        <li>rotate is used to rotate items</li>
+        <li>each of these can be put on the same line:</li>
+        <ul>
+            <li>I.E: <code>transform: rotate(10deg) translateX(40px) scale(1.5)</code></li>
+        </ul>
+        <li>skew, as it says, allows us to to move the object on the x and y axis. I like to think of this as y=mx+b.
+        </li>
+        <li>you can change the origin (or center point) of an object by using <code>transform-origin</code></li>
+        <li>Animation/transitions, can be smoother and sometimes better then JavaScript animations.</li>
+        <li>steps to create a simple transition in CSS</li>
+        <ol>
+            <li>Declare the original state of the element in the default style declaration.</li>
+            <li>Declare the final state of your transitioned element; for example, a :hover state.</li>
+            <li>Include the transition functions in your default style declaration using the transition properties,
+                including: transition-property, transition-duration, transition-timing-function, and transition-delay.
+                We’ll look at each of these and how they work shortly.</li>
+        </ol>
+        <li>a good example of transform, animations and more in practice is on my <a href="https://hbowlby1.github.io/WDD331/zengarden/index.html">CSS Zen Garden</a> web page.</li>
+    </ul>
+
+    <hr>
+    <h2>Chapter 12: Canvas, SVG, and Drag and Drop</h2>
+    <ul>
+        <li>We can use JavaScript to make pictures by using Canvas tags. Just make sure to include width, height and either an ID or class or both.</li>
+        <li>There is mainly only support for 2D when using the Canvas api. For 3d you can use webGl</li>
+        <li><pre>
+            1: var canvas = document.getElementById("myCanvas"); 
+            2: var context = canvas.getContext("2d"); 
+            3: context.strokeStyle = "red";
+            4: context.fillStyle = "rgba(0, 0, 255, 0.5)";
+            5: context.fillRect(10, 10, 100, 100);   
+            6: context.strokeRect(10, 10, 100, 100);</pre></li>
+            <ul>
+                <li>above makes a rectangle. Line 1 is grabbing the canvas item.</li>
+                <li>Line 2 establishes the type of drawing.</li>
+                <li>Line 3 is the color of the stroke.</li>
+                <li>line 4 is the color that the rectangle is filled with</li>
+                <li>line 5 is where the rectangle is created and how big it is, the parentheses is (x, y, width, height)</li>
+                <li> line 6 is another rectangle of the same size and place but it is not filled. Hence, the way we get the red stroke.</li>
+            </ul>
+        <li>You can use <code>arc(x, y, startAngle, endAngle, anticlockwise) for a circle. EX: context.arc(50, 50, 30, 0, Math.PI*2, true);</code></li>
+        <li>you can save images created by canvas. You can use <code>window.open(canvas5.toDataURL("image/png"));</code></li>
+        <li>The rest of this chapter was review from a Udemy course I've taken and WDD 331.</li>
+
+    </ul>
+</body>
+
+</html>

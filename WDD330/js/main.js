@@ -23,6 +23,10 @@ const links = [
     {
         label: "Week 6 Todo Challenge",
         url: "WDD330/week6/todo.html"
+    },
+    {
+        label: "Week 7 Notes",
+        url: "WDD330/week7/todo.html"
     }
 ];
 
