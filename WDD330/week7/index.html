@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Notes</title>
+</head>
+
+<body>
+    <h1>Week 7 Notes</h1>
+    <hr>
+    <h2>Chapter 11: Further Functions</h2>
+    <ul>
+        <li>All functions have a length functions (which is actually pretty cool).</li>
+        <li>You can add properties to any function.</li>
+        <ul>
+            <li>example:</li>
+            <li>
+                <pre>square.description = 'Squares a number that is provided as an argument'
+output: 'Squares a number that is provided as an argument'
+                </pre>
+            </li>
+        </ul>
+        <li>you can use anonymous functions to define and even rewrite functions.</li>
+        <li><pre>
+            function party(){
+                console.log('Wow this is amazing!');
+                party = function(){
+                    console.log('Been there, got the T-Shirt');
+                }
+            }
+            
+            const beachParty = party; // note that the party function has not been invoked
+            
+            beachParty(); // the party() function has now been redefined, even though it hasn't been called explicitly
+            << 'Wow this is amazing!'
+            
+            party(); 
+            << 'Been there, got the T-Shirt'
+            
+            beachParty(); // but this function hasn't been redefined
+            << 'Wow this is amazing!'
+            
+            beachParty(); // no matter how many times this is called it will remain the same
+            << 'Wow this is amazing!'
+        </pre></li>
+        <li>You can use the wait function to run code to run code and then when the time limit is reached it the wait command can run a function.</li>
+        <li>Useful site on <a href="http://callbackhell.com/">callback hells</a></li>
+        <li>Code to see promises in action: <a href="https://jsbin.com/lesaxafiya/edit?js,console">code</a></li>
+    </ul>
+    <hr>
+    <h2>Chapter 13: Ajax</h2>
+    <ul>
+        <li>Ajax allows web pages to communicate asynchronously with a server. It can create new webpages wihtout reloading.</li>
+        <li>We can use the fetch method to grab an API</li>
+        <li>
+            <pre>
+const url = 'https:example.com/data';
+
+fetch(url)
+.then((response) => {
+    if(response.ok) {
+        return response;
+    }
+    throw Error(response.statusText);
+})
+.then( response => // do something with response )
+.catch( error => console.log('There was an error!') )
+            </pre>
+        </li>
+        <li>above is a way to call the fetch method in order to retrieve an API.</li>
+        <li>more about the request constructor and the set up <a href="https://docs.w3cub.com/dom/request/request">Here</a></li>
+        <li>Most is review already and active examples can be seen <a href="https://hbowlby1.github.io/WDD230/lesson-11/preston.html">here</a></li>
+        <li>API example from the chapter: <a href="ajaxExample.html">Here</a></li>
+        <li>Todo example from the chapter: <a href="todo.html">Here</a></li>
+    </ul>
+</body>
+
+</html>
