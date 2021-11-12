@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Week 9 Notes</title>
+</head>
+
+<body>
+    <h1>Week 8 Notes</h1>
+    <hr>
+    <p>download the <a href="week9TA.zip" download>team activity</a></p>
+
+    <h2>Chapter 9: The Window Object</h2>
+    <ul>
+        <li>Every browser window, tab, popup, frame, and iframe has a window object.</li>
+        <li>In general, you should refer to global variables without using the window object; it’s less typing and your
+            code will be more portable between environments.</li>
+        <li>using prompt or confirm stops the program entirely and can cause issues with programs that are running live.
+        </li>
+        <li>Today you usually wouldn't use a lot of the windows methods due to annoyance, pop up blockers and web
+            browsers preventing certain action. In other words, use caution.</li>
+        <li><code>window.screen</code> can be useful on phones.</li>
+        <li>cookies are a way of storing information that pertains to the user. You can view current cookies either by
+            using the web developer extension or typing <code>document.cookie</code> in the console.</li>
+        <li>you can set the expiration on a cookie, if you don't they will be removed when the session is closed or the
+            web browser is closed.</li>
+        <li>example of animation</li>
+        <li>
+            <pre>
+            const squareElement = document.getElementById('square');
+            let angle = 0;
+            
+            function rotate() {
+                angle = (angle + 2)%360;
+                squareElement.style.transform = `rotate(${angle}deg)`
+                window.requestAnimationFrame(rotate);
+            }
+            
+            const id = requestAnimationFrame(rotate);
+        </pre>
+        </li>
+        <li>just know that CSS animations are usually better then JavaScript animations.</li>
+        <li></li>
+        <li>
+            <div id='square'></div>
+        </li>
+    </ul>
+    <hr>
+    <h2>Chapter 14: HTML5 API's</h2>
+    <ul>
+        <li>you can use the <code>data</code> attribute to embed data in web pages. They can be customized to say
+            whatever. EX: <code>data-superpowers = 'flight'</code></li>
+        <li>example of grabbing the data using JavaScript
+            <pre>
+                const superman = document.getElementById('hero');
+                const powers = superman.dataset.powers;
+                << 'flight superSpeed'
+            </pre>
+        </li>
+        <li>You can use HTML5 APIs to access hardware like cameras or other kinds of hardware.</li>
+        <li>more on web storage api <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">here</a></li>
+        <li>more on geolocation api <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">here.</a> Just know that you need user permission first before it can be utilized.</li>
+        <li>Here is a whole <a href="https://www.youtube.com/watch?v=EEhohSp0if4&list=PLyuRouwmQCjlBGMxI_0Ly_Dw-vrniOYNh">YouTube playlist</a> of a bunch of different API's to use in HTML5</li>
+    </ul>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
