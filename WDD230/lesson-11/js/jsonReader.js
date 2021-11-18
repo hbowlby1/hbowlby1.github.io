@@ -1,4 +1,4 @@
-const requestURL = 'https://hbowlby1.github.io/lesson-9/json/towndata.json';
+const requestURL = 'https://hbowlby1.github.io/WDD230/lesson-9/json/towndata.json';
 
 fetch(requestURL)
   .then(function (response) {
