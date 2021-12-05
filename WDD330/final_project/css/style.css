@@ -63,6 +63,7 @@ input[type=number] {
     color: #FFF;
     font-size: 1em;
     font-family: 'Roboto';
+    text-align: center;
 }
 
 .budget-header .balance .value{
@@ -70,6 +71,7 @@ input[type=number] {
     font-size: 2em;
     margin-top: 10px;
     font-family: 'Roboto';
+    text-align: center;
 }
 
 .budget-header .account{
@@ -102,7 +104,7 @@ input[type=number] {
     opacity: 0.5;
 }
 .budget-header .account .outcome .outcome-total{
-    color: #f0624d;
+    color: #FFF;
     font-family: 'Roboto';
 }
 
@@ -206,7 +208,7 @@ input[type=number] {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('icon/trash.png');
+    background-image: url('../icon/trash.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -305,7 +307,7 @@ input[type=number] {
     height: 20px;
     right: 50px;
     cursor: pointer;
-    background-image: url("icon/edit.png");
+    background-image: url("../icon/edit.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -316,7 +318,7 @@ input[type=number] {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('icon/trash.png');
+    background-image: url('../icon/trash.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -407,7 +409,7 @@ input[type=number] {
     height: 20px;
     right: 50px;
     cursor: pointer;
-    background-image: url("icon/edit.png");
+    background-image: url("../icon/edit.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -418,7 +420,7 @@ input[type=number] {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('icon/trash.png');
+    background-image: url('../icon/trash.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
