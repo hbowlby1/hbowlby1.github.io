@@ -39,6 +39,10 @@ const links = [
     {
         label: "Week 10 Notes",
         url: "WDD330/week10/index.html"
+    },
+    {
+        label: "Final Project: Budget App",
+        url: "WDD330/final_project/index.html"
     }
 ];
 
