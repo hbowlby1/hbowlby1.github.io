@@ -198,7 +198,7 @@ function show(element){
 
 function hide( elements ){
     elements.forEach( element => {
-        element.classList.add("hide");
+        element.classList.add("animated");
     })
 }
 

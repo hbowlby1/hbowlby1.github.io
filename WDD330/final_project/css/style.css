@@ -424,3 +424,11 @@ input[type=number] {
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
+
+/* fade away for use of animation */
+
+.delete .animated{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
