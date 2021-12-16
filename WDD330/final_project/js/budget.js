@@ -1,3 +1,5 @@
+/* www.youtube.com/CodeExplained */
+
 // SELECT ELEMENTS
 const balanceEl = document.querySelector(".balance .value");
 const incomeTotalEl = document.querySelector(".income-total");
@@ -198,7 +200,7 @@ function show(element){
 
 function hide( elements ){
     elements.forEach( element => {
-        element.classList.add("animated");
+        element.classList.add("hide");
     })
 }
 
